@@ -8,17 +8,16 @@ import SpeedDialAction from "@mui/material/SpeedDialAction";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
 import DesktopMacIcon from "@mui/icons-material/DesktopMac";
 import DirectionsIcon from "@mui/icons-material/Directions";
-import { createTheme } from '@mui/material/styles';
 
 
-/* '#85E1D2', GREEN
-main: '#DAF64B', YELLOW */
-
+function handleDialogOpen (e) {
+  console.log(e)
+} 
 const inter = Inter({ subsets: ["latin"] });
 const actions = [
-  { icon: <Diversity1Icon color="neutral"/>, name: "Collaborators" },
-  { icon: <DesktopMacIcon color="primary" />, name: "Tech Stack" },
-  { icon: <DirectionsIcon />, name: "Go to Project" },
+  { icon: <Diversity1Icon sx={{ bgcolor: "#DAB7F9" }} />, name: "Collaborators", action: handleDialogOpen(), operation: "collaborators" },
+  { icon: <DesktopMacIcon sx={{ bgcolor: "#369CEE" }} />, name: "Tech Stack",  action: handleDialogOpen(), operation: "techstack" },
+  { icon: <DirectionsIcon sx={{ bgcolor: "#92CC41" }} />, name: "Go to Project",  action:  handleDialogOpen(), operation: "go"  },
 ];
 
 const Projects = () => {
@@ -26,8 +25,25 @@ const Projects = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+
+  //handler function
+ function handleTap (e,operation){
+  e.preventDefault();
+  if(operation=="collaborators"){
+    console.log("one")
+  }else if(operation=="techstack"){
+    console.log("two")
+  }else if(operation=="go"){
+    console.log("three")
+  }
+  
+};
+
   return (
     <>
+
+      
+   
       <div className="portfolioGrid">
         <div class="img nes-container is-centered is-rounded is-dark">
           {" "}
@@ -39,6 +55,7 @@ const Projects = () => {
           </p>
           <Box className="box">
             <SpeedDial
+
               /*  className="speedDialBox" */
               ariaLabel="SpeedDial"
               className="SpeedDial"
@@ -46,18 +63,19 @@ const Projects = () => {
                 position: "absolute",
                 bottom: 16,
                 right: 16,
-                color: "primary",
+                color: "#F3ABCB",
               }}
               icon={<SpeedDialIcon />}
+              onTap={handleTap}
               onClose={handleClose}
               onOpen={handleOpen}
               open={open}
               FabProps={{
                 sx: {
                   color: "none",
-                  bgcolor: "none",
+                  bgcolor: "#F3ABCB",
                   "&:hover": {
-                    bgcolor: "none",
+                    bgcolor: "#F3ABCB",
                   },
                 },
               }}
@@ -70,6 +88,9 @@ const Projects = () => {
                   icon={action.icon}
                   tooltipTitle={action.name}
                   onClick={handleClose}
+                  onTap={(e) => {
+                    handleTap(e.action.operation)
+                  }}
                   FabProps={{
                     sx: {
                       color: "none",
@@ -102,7 +123,7 @@ const Projects = () => {
                 position: "absolute",
                 bottom: 16,
                 right: 16,
-                color: "primary",
+                color: "#F3ABCB",
               }}
               icon={<SpeedDialIcon />}
               onClose={handleClose}
@@ -111,9 +132,9 @@ const Projects = () => {
               FabProps={{
                 sx: {
                   color: "none",
-                  bgcolor: "none",
+                  bgcolor: "#F3ABCB",
                   "&:hover": {
-                    bgcolor: "none",
+                    bgcolor: "#F3ABCB",
                   },
                 },
               }}
@@ -141,6 +162,7 @@ const Projects = () => {
           </Box>
         </div>
       </div>
+   
     </>
   );
 };
