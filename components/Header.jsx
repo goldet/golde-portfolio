@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Header = () => {
 
   return (
@@ -8,22 +10,29 @@ const Header = () => {
           <h1 className="lastName">Tischler</h1>
         </div>
         <div className="btn">
+        <Link href="/"> 
           <button
             type="button"
-            class="nes-btn is-normal"
+            class="navButtons nes-btn is-normal"
             color="primary"
             background-color="none"
           >
-            About Me
+            Home 
           </button>
+          </Link>
+
+          <Link href="/about"> 
           <button
             type="button"
             class="nes-btn is-primary"
             color="primary"
             background-color="none"
           >
-            Projects
+           About Me
           </button>
+          </Link>
+
+          <Link href="/contact"> 
           <button
             type="button"
             class="nes-btn is-success"
@@ -32,6 +41,8 @@ const Header = () => {
           >
             Contact
           </button>
+          </Link>
+          
         </div>
       </div>
     </>

@@ -19,6 +19,24 @@ const Footer = () => {
         >
           <i class="nes-icon github is-medium"></i>
         </Link>
+        
+
+        <Link
+          className="twitter"
+          href="https://twitter.com/GoldeCodes"
+          target="blank"
+        >
+        <i class="nes-icon twitter is-medium"></i>
+        </Link>
+
+        <Link
+          className="gmail"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=golde.tischler@gmail.com&su=SUBJECT&body=BODY"
+          target="blank"
+        >
+        <i class="nes-icon gmail is-medium"></i>
+        </Link>
+
       </div>
         </>
      );
