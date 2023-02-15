@@ -22,8 +22,11 @@ const actions = [
 
 const Projects = () => {
   const [open, setOpen] = useState(false);
+  const [open2, setOpen2] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const handleOpen2 = () => setOpen(true);
+  const handleClose2 = () => setOpen(false);
 
 
   //handler function
@@ -45,13 +48,12 @@ const Projects = () => {
       
    
       <div className="portfolioGrid">
-        <div class="img nes-container is-centered is-rounded is-dark">
+        <div className="img nes-container is-centered is-rounded is-dark">
           {" "}
           {/* with-title */}
-          <p class="portfolioTitle title">Zero-Waste</p>
+          <p className="portfolioTitle title">Zero-Waste</p>
           <p className="portfolioDescription">
-            I created this app in an attempt to build community and reduce food
-            waste.
+            This app attempts to reduce food waste while building community.
           </p>
           <Box className="box">
             <SpeedDial
@@ -106,13 +108,13 @@ const Projects = () => {
           </Box>
         </div>
 
-        <div class="img nes-container is-centered is-rounded is-dark">
+        <div className="img nes-container is-centered is-rounded is-dark">
           {" "}
           {/* with-title */}
-          <p class="portfolioTitle title">Ben Schroeder Poetry</p>
+          <p className="portfolioTitle title">Ben Schroeder Poetry</p>
           <p className="portfolioDescription">
-            I created this app for poet and essayist Ben Shroeder, to showcase
-            his work.
+           This web app was made to showcase the work of poet and essayist, Ben Shroeder.
+            
           </p>
           <Box className="box">
             <SpeedDial
@@ -126,9 +128,9 @@ const Projects = () => {
                 color: "#F3ABCB",
               }}
               icon={<SpeedDialIcon />}
-              onClose={handleClose}
-              onOpen={handleOpen}
-              open={open}
+              onClos2e={handleClose2}
+              onOpen2={handleOpen2}
+              open2={open2}
               FabProps={{
                 sx: {
                   color: "none",
@@ -146,7 +148,7 @@ const Projects = () => {
                   key={action.name}
                   icon={action.icon}
                   tooltipTitle={action.name}
-                  onClick={handleClose}
+                  onClick={handleClose2}
                   FabProps={{
                     sx: {
                       color: "none",
