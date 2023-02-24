@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500&family=Arvo:wght@400;700&family=Crimson+Pro:ital,wght@0,600;0,700;1,200;1,300;1,400;1,600&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Serif+Text:ital@0;1&family=Gloria+Hallelujah&family=Montserrat:wght@300;400;500&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;0,1000;1,200;1,600;1,700;1,800;1,900&family=Noto+Serif+JP:wght@200;300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,700;1,800&family=Prompt:wght@200&family=Questrial&display=swap");
 
 * {
- 
   font-family: "Mulish", sans-serif;
   box-sizing: border-box;
 }
@@ -12,7 +11,6 @@ body {
 }
 
 /* header */
-
 
 .firstName {
   color: black;
@@ -62,8 +60,6 @@ body {
   margin-left: 10px;
 }
 
-
-
 .titleContaner {
   position: relative;
 }
@@ -95,9 +91,7 @@ body {
 .speedDial {
   background-color: none;
   color: none;
- 
 }
-
 
 .portfolioTitle {
   background: none;
@@ -147,7 +141,7 @@ body {
 }
 
 .contactParagraph {
-  font-size: 20px;  
+  font-size: 20px;
 }
 
 /* end of contact page */
@@ -178,11 +172,37 @@ body {
 }
 
 .aboutParagraph {
-  font-size: 20px;  
+  font-size: 20px;
 }
 
-
 /* end of about me page */
+
+/* zw */
+
+.kirbyZW {
+  position: absolute;
+  right: 250px;
+  top: 620px;
+}
+
+.introBubbleContainerZW {
+  margin-top: 0;
+  margin-bottom: 50%;
+}
+
+.ZWTitle {
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
+    0 -1px 1px #000, 1px 1px 0 #000;
+  font-weight: 800;
+  font-size: 42px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+/* end of zw */
 
 /* footer */
 
@@ -206,11 +226,9 @@ body {
 
 /* end of footer */
 
-
 @media only screen and (min-width: 600px) {
   /* for tablets */
 }
-
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -255,87 +273,208 @@ body {
   .speedDial {
     background-color: none;
     color: none;
-   
   }
 
+  /* contact */
 
-/* contact */
+  .kirbyContact {
+    position: absolute;
+    right: 40%;
+    top: 42%;
+  }
 
-.kirbyContact {
-  position: absolute;
-  right: 40%;
-  top: 42%;
+  .contactTitle {
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
+      0 -1px 1px #000, 1px 1px 0 #000;
+    font-weight: 800;
+    font-size: 42px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .introBubbleContact {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .contactContainer {
+    width: 550px;
+    height: 210px;
+  }
+
+  .introBubbleAndContactContainer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  /* end of contact */
+
+  /* about me page */
+  .goldeAbout {
+    position: absolute;
+    right: 88%;
+    top: 36%;
+  }
+  .aboutTitle {
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
+      0 -1px 1px #000, 1px 1px 0 #000;
+    font-weight: 800;
+    font-size: 42px;
+  }
+
+  .introBubbleAbout {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 15%;
+    margin-left: 8%;
+  }
+  .aboutParagraph {
+    width: 100%;
+  }
+
+  .titleAndBubbleContainerAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+
+  /* end of about me page */
+
+  /* zw */
+
+  .kirbyZW {
+    position: absolute;
+    right: 1150px;
+    top: 300px;
+  }
+
+  .introBubbleContainerZW {
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+
+  .ZWTitle {
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
+      0 -1px 1px #000, 1px 1px 0 #000;
+    font-weight: 800;
+    font-size: 42px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  /* end of zw */
+
+  /* project deatil */
+
+  .page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .main {
+    color: black;
+    padding: 30px 15px 30px 15px;
+  }
+
+  .container1 {
+    width: 100%;
+    margin: auto;
+  }
+
+  .back-link {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .spacer-20 {
+    height: 20px;
+  }
+
+  .spacer-50 {
+    height: 50px;
+  }
+
+  .project-detail-card {
+    background-color:white;
+    border-radius: 3px;
+  }
+
+  .project-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    margin: 0px;
+  }
+
+  .project-detail-img {
+    object-fit: cover;
+    
+    width: 100%;
+
+    aspect-ratio: 1;
+  }
+
+  .project-detail-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(218, 183, 249);
+  }
+
+  .project-detail-title {
+    font-size: 34px;
+    line-height: 34px;
+    padding-bottom: 10px;
+  }
+
+  .section-container {
+    display: flex;
+    padding: 15px 0px 10px 0px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .icon-text {
+    align-self: center;
+    height: 25px;
+  }
+
+  .project-detail-heading {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 30px 0px 0px 0px;
+  }
+
+  .horizontal-line {
+    border-top: 1px #eef4f4 solid;
+    margin-top: 10px;
+  }
+
+  .github-project {
+    padding: 10px 0px 0px 0px;
+  }
+
+  /* end of project deatil */
 }
-
-.contactTitle {
-  background: none;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
-    0 -1px 1px #000, 1px 1px 0 #000;
-  font-weight: 800;
-  font-size: 42px;
-  margin-top: 30px;
-  margin-left: 10px;
-}
-
-.introBubbleContact {
- margin-top: 0px; 
- font-size: 20px;
-
-}
-
-.contactContainer {
-  width: 550px;
-  height: 210px;
-}
-
- .introBubbleAndContactContainer {
-margin-top:60px;
-display: flex;
-flex-direction: row-reverse;
-justify-content: space-between;
- }
-
-/* end of contact */
-
-/* about me page */
-.goldeAbout {
-  position: absolute;
-  right: 88%;
-  top: 36%;
-  
-}
-.aboutTitle {
-  background: none;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
-    0 -1px 1px #000, 1px 1px 0 #000;
-  font-weight: 800;
-  font-size: 42px;
-}
-
-.introBubbleAbout {
-  width: 25%;
-  margin-top:3%;
-  margin-bottom: 15%;
-  margin-left: 8%;
-}
-.aboutParagraph{
-  width: 100%;
-}
-
-.titleAndBubbleContainerAbout {
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  gap: 10%;
-}
-
-
-/* end of about me page */
-}
-

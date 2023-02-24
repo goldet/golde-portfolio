@@ -3,7 +3,6 @@ import { useState } from "react";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
 import DesktopMacIcon from "@mui/icons-material/DesktopMac";
 import DirectionsIcon from "@mui/icons-material/Directions";
-import Link from "next/link";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Popover from "@mui/material/Popover";
