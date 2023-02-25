@@ -12,12 +12,12 @@ const Projects = () => {
             This app attempts to reduce food waste while building community.
           </p>
 
-          <ProjectButtons />
+         {/*  <ProjectButtons /> */}
         </div>
 
         <div className="img nes-container is-centered is-rounded is-dark">
           {" "}
-          <p className="portfolioTitle title">Ben Schroeder Poetry</p>
+          <Link href="/benschroederpoetry"><p className="portfolioTitle title">Ben Schroeder Poetry</p></Link>
           <p className="portfolioDescription">
             This web app was made to showcase the work of poet and essayist, Ben
             Shroeder.

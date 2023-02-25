@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Header from "../Header";
 import Image from "next/image";
-import zwhero from "../../public/zwhero.png";
+import benschroederhero from "../../public/benschroederhero.png";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
 import DesktopMacIcon from "@mui/icons-material/DesktopMac";
 import DirectionsIcon from "@mui/icons-material/Directions";
 
-const ZeroWasteProject = () => {
+const BenPoetryProject = () => {
   return (
     <>
       <Header />
@@ -18,12 +18,10 @@ const ZeroWasteProject = () => {
 
         <div className="introBubbleContainerZW">
           <p class="introBubble nes-balloon from-left ">
-            Hi! Welcome to an MVP project I did. The mission of the web app is
-            to reduce waste while building community! You will be able to post
-            food items you either want to share or that you need. I&#39;m
-            working on iterating it and adding some cool features such as user
-            authentication and profile pages, and geolocation. Check out my
-            github if you&#39;re interested in collaborating!
+            Hi! Welcome to Ben Shroeder&#39;s Poetry web application. Ben
+            Shroeder is a poet and essayist currently living in Madrid. He
+            wanted a web application to showcase his talent. For styling, he
+            wanted a minimalist and modern aethstic.
           </p>
         </div>
       </div>
@@ -41,14 +39,16 @@ const ZeroWasteProject = () => {
               <div className="project-detail-grid">
                 <Image
                   className="project-detail-img"
-                  src={zwhero}
-                  alt="hero page of zero waste web app"
+                  src={benschroederhero}
+                  alt="hero page of Ben Shroeder Poetry web app"
                   width="100px"
                   height="100px"
                 />
                 <div className="project-detail-text">
                   <div>
-                    <h3 className="project-detail-title">Zero-Waste</h3>
+                    <h3 className="project-detail-title">
+                      Ben Schroeder Poetry
+                    </h3>
 
                     <div className="section-container">
                       <div className="icon">
@@ -61,11 +61,10 @@ const ZeroWasteProject = () => {
                           </p>
                           <Link
                             className="link project-detail-heading"
-                            href="https://github.com/Shaunivdh"
+                            href="https://github.com/DanNisenson"
                             target="blank"
                           >
-                            {" "}
-                            <li>Shauni Vanderhorst</li>
+                            <li>Dan Nisenson</li>
                           </Link>
                         </div>
                       </div>
@@ -83,29 +82,17 @@ const ZeroWasteProject = () => {
                     </div>
                     <div className="spacer-20"></div>
                     <p>
-                      <div class="">
-                        <ul class="">
+                      <div >
+                        <ul >
                           <li>
-                            Next.Js: I chose Next because of the improved
+                            Next.Js: We chose Next because of the improved
                             development process, improved performance which
                             leads to faster applications, and improved SEO.
                           </li>
                           <li>
-                            CSS and Tailwind CSS: I used this project to start
-                            getting more comfortable with Tailwind, although I
-                            did also use Vanilla CSS.
-                          </li>
-                          <li>
-                            Express.Js: I used Express as it is the most popular
-                            Node web framework. It also uses Javascript, is
-                            scalable, and has a great open-source community.
-                          </li>
-                          <li>
-                            MySQL: I used MySQL because is is ideal for storing
-                            web application data. I also intend on creating
-                            other tables in future iterations that will need a
-                            relational database which stores data across
-                            multiple tables.
+                            Tailwind CSS: This projecy was styled with Tailwind
+                            CSS. It allowed us to work quickly during the design
+                            process.
                           </li>
                         </ul>
                       </div>
@@ -122,10 +109,12 @@ const ZeroWasteProject = () => {
                     <div className="horizontal-line">
                       <Link
                         className="github-project"
-                        href="https://github.com/goldet/zero-waste"
+                        href="https://github.com/goldet/benspoetryapp"
                         target="blank"
                       >
-                        <p className="link github-project">Zero Waste in Github</p>
+                        <p className="link github-project">
+                          Ben Schroeder Poetry in Github
+                        </p>
                       </Link>
                     </div>
                   </div>
@@ -141,4 +130,4 @@ const ZeroWasteProject = () => {
   );
 };
 
-export default ZeroWasteProject;
+export default BenPoetryProject;
