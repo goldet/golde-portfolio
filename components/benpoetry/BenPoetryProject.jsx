@@ -13,7 +13,7 @@ const BenPoetryProject = () => {
 
       <div className="jobTitleIntroBubbleContainer">
         <div className="titleContainer">
-          <i class="kirbyZW nes-kirby is-small"></i>
+          <i class="kirbyBen nes-kirby is-small"></i>
         </div>
 
         <div className="introBubbleContainerZW">
