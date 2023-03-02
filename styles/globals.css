@@ -256,6 +256,10 @@ body {
   height: 750px;
 }
 
+.spacer-500 {
+  height: 500px;
+}
+
 .spacer-50 {
   height: 50px;
 }
@@ -484,7 +488,7 @@ body {
   .kirbyZW {
     position: absolute;
     right: 320px;
-    top: 750px;
+    top: 660px;
   }
 
   .link {
@@ -624,6 +628,7 @@ body {
     display: grid;
     justify-content: start;
     padding-left: 20%;
+    height: 1000px;
   }
 
 
@@ -640,7 +645,7 @@ body {
   .container-buttons-project-details {
    width: 850px;
    height:400px;
-   padding-top: 300px;
+   padding-top: 220px;
   }
 
   .project-info-screen {
@@ -654,11 +659,31 @@ body {
     gap: 30px;
     justify-content: end;
     left: 35%;
-    bottom: -126%;
+    bottom: -108%;
     position: absolute;
     padding-top: 30px;
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  .show-content-button {
+ background:transparent;
+    border:none;
+    outline:none;
+    display:block;
+    height:50px;
+    width:80px;
+    cursor:pointer;  
+  }
+
+ .show-content-button:focus {
+    outline: none;
+  }
+
+  .background-image {
+    display: flex;
+    justify-content: center;
+
   }
 
 }

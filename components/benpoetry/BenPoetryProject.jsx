@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "../Header";
 import Image from "next/image";
+import bpopenprompt from "../../public/bpopenprompt.png";
 import newbenhero from "../../public/newbenhero.png";
 import newmobilebenhero from "../../public/newmobilebenhero.png";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
@@ -15,6 +16,9 @@ import { BsArrowRightSquare } from "react-icons/bs";
 
 const BenPoetryProject = () => {
   const isWide = useMedia("(min-width: 480px)", false);
+
+     //state to show content 
+     const [showContent, setShowContent] = useState(false);
 
   //state to hold different project info
   const [showAbout, setShowAbout] = useState(true);
@@ -33,6 +37,14 @@ const BenPoetryProject = () => {
   //handle the button click event and update the current image index:
   const handleNextButtonClick = () => {
     setCurrentImageIndex((currentImageIndex + 1) % images.length);
+  };
+
+  const handleContentClickTrue = () => {
+    setShowContent(true);
+  };
+
+  const handleContentClickFalse = () => {
+    setShowContent(false);
   };
 
   //click handlers for project info
@@ -84,6 +96,31 @@ const BenPoetryProject = () => {
   return (
     <>
       <Header />
+
+      {!showContent && (
+        
+        <div className="background-image" style={{ position: "relative" }}>
+          <Image
+          className="project-detail-img"
+            src={bpopenprompt}
+            alt="background image"
+            width="100px"
+            height="100px"
+          />
+          <button className="show-content-button"  style={{
+      position: "absolute",
+      top: "50%",
+      left: "45%",
+      transform: "translate(-50%, -50%)",}} onClick={handleContentClickTrue}>
+          
+          </button>
+          <div className="spacer-500"></div>
+        
+         
+        </div>      
+      )}
+
+{showContent && ( 
 
       <div className="container-project-desktop">
         <div className="container-project-desktop-content">
@@ -220,8 +257,10 @@ const BenPoetryProject = () => {
           </div>
 
           <div className="spacer-750"></div>
+          <button className="show-content-button" onClick={handleContentClickFalse}> GO BACK</button>
+
         </div>
-      </div>
+      </div> )}
       <Footer />
     </>
   );

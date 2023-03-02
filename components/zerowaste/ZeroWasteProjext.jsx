@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "../Header";
 import Image from "next/image";
+import zwopenprompt from "../../public/zwopenprompt.png";
 import zwhero from "../../public/zwhero.png";
 import zwmobilehero from "../../public/zwmobilehero.png";
 import foodshareZW from "../../public/foodshareZW.png";
@@ -18,6 +19,10 @@ import Footer from "../Footer";
 const ZeroWasteProject = () => {
   //to render different based on screen size
   const isWide = useMedia("(min-width: 480px)", false);
+
+   //state to show content 
+  const [showContent, setShowContent] = useState(false);
+
   //state to hold different project info
   const [showAbout, setShowAbout] = useState(true);
   const [showCollaborators, setShowCollaborators] = useState(false);
@@ -38,6 +43,14 @@ const ZeroWasteProject = () => {
   //handle the button click event and update the current image index:
   const handleNextButtonClick = () => {
     setCurrentImageIndex((currentImageIndex + 1) % images.length);
+  };
+
+  const handleContentClickTrue = () => {
+    setShowContent(true);
+  };
+
+  const handleContentClickFalse = () => {
+    setShowContent(false);
   };
 
   //click handlers for project info
@@ -112,6 +125,31 @@ const ZeroWasteProject = () => {
   return (
     <>
       <Header />
+
+      {!showContent && (
+        
+        <div className="background-image" style={{ position: "relative" }}>
+          <Image
+          className="project-detail-img"
+            src={zwopenprompt}
+            alt="background image"
+            width="100px"
+            height="100px"
+          />
+          <button className="show-content-button"  style={{
+      position: "absolute",
+      top: "50%",
+      left: "45%",
+      transform: "translate(-50%, -50%)",}} onClick={handleContentClickTrue}>
+          
+          </button>
+          <div className="spacer-500"></div>
+        
+         
+        </div>      
+      )}
+
+{showContent && ( 
 
       <div className="container-project-desktop">
         <div className="container-project-desktop-content">
@@ -295,10 +333,11 @@ const ZeroWasteProject = () => {
               )}
             </div>
           </div>
-
+          
           <div className="spacer-750"></div>
+          <button className="show-content-button" onClick={handleContentClickFalse}> GO BACK</button>
         </div>
-      </div>
+      </div> )}
       <Footer />
     </>
   );
