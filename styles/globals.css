@@ -3,11 +3,12 @@
 * {
   font-family: "Mulish", sans-serif;
   box-sizing: border-box;
+  
 }
 
 body {
   background-color: rgb(218, 183, 249);
-  margin: 20px;
+  margin: 100px;
 }
 
 /* header */
@@ -83,6 +84,7 @@ body {
 
 .img {
   display: block;
+  justify-content: start;
   width: 100%;
   box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.06);
   height: 400px;
@@ -219,105 +221,108 @@ body {
 
 /* end benP */
 
-  /* project deatil */
+/* project deatil */
 
-  .page-container {
-    position: relative;
-    min-height: 100vh;
-  }
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
 
-  .main {
-    color: black;
-    padding: 30px 15px 30px 15px;
-  }
+.main {
+  color: black;
+  padding: 30px 15px 30px 15px;
+}
 
-  .container1 {
-    width: 100%;
-    margin: auto;
-  }
+.container1 {
+  width: 100%;
+  margin: auto;
+}
 
-  .back-link {
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 700;
-    color:black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.back-link {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 14px;
+}
 
-  .spacer-20 {
-    height: 20px;
-  }
+.spacer-20 {
+  height: 20px;
+}
 
-  .spacer-50 {
-    height: 50px;
-  }
+.spacer-750 {
+  height: 750px;
+}
 
-  .project-detail-card {
-    background-color:white;
-    border-radius: 3px;
-  }
+.spacer-50 {
+  height: 50px;
+}
 
-  .project-detail-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
-    margin: 0px;
-  }
+.project-detail-card {
+  /* background-color:white;
+    border-radius: 3px; */
+}
 
-  .project-detail-img {
-    object-fit: cover;
-    
-    width: 100%;
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin: 0px;
+}
 
-    aspect-ratio: 1;
-  }
+.project-detail-img {
+  object-fit: contain;
+  width: 100%;
+ 
+}
 
-  .project-detail-text {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgb(218, 183, 249);
-  }
+.project-detail-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(218, 183, 249);
+}
 
-  .project-detail-title {
-    font-size: 34px;
-    line-height: 34px;
-    padding-bottom: 10px;
-  }
+.project-detail-title {
+  font-size: 34px;
+  line-height: 34px;
+  padding-bottom: 10px;
+}
 
-  .section-container {
-    display: flex;
-    padding: 15px 0px 10px 0px;
-  }
+.section-container {
+  display: flex;
+  padding: 15px 0px 10px 0px;
+}
 
-  .icon {
-    font-size: 18px;
-  }
+.icon {
+  font-size: 18px;
+}
 
-  .icon-text {
-    align-self: center;
-    height: 25px;
-  }
+.icon-text {
+  align-self: center;
+  height: 25px;
+}
 
-  .project-detail-heading {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700;
-    padding: 30px 0px 0px 0px;
-  }
+.project-detail-heading {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 30px 0px 0px 0px;
+}
 
-  .horizontal-line {
-    border-top: 1px #eef4f4 solid;
-    margin-top: 10px;
-  }
+.horizontal-line {
+  border-top: 1px #eef4f4 solid;
+  margin-top: 10px;
+}
 
-  .github-project {
-    padding: 10px 0px 0px 0px;
-  }
+.github-project {
+  padding: 10px 0px 0px 0px;
+}
 
-  /* end of project deatil */
+/* end of project deatil */
 
 /* footer */
 
@@ -349,7 +354,7 @@ body {
   /* For desktop: */
 
   body {
-    margin: 30px;
+    margin: 38px;
   }
 
   .fullName {
@@ -364,6 +369,14 @@ body {
     right: 850px;
     top: 230px;
   }
+
+  .introBubble {
+    width: 400px;
+    position: absolute;
+    top: 80px;
+    left: 590px;
+  }
+
   .jobTitle {
     background: none;
     color: #fff;
@@ -470,116 +483,51 @@ body {
 
   .kirbyZW {
     position: absolute;
-    right: 1150px;
-    top: 300px;
-  }
-
-  .introBubbleContainerZW {
-    margin-top: 0;
-    margin-bottom: 10%;
-  }
-
-  .ZWTitle {
-    background: none;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
-      0 -1px 1px #000, 1px 1px 0 #000;
-    font-weight: 800;
-    font-size: 42px;
-    margin-top: 30px;
-    margin-left: 10px;
+    right: 320px;
+    top: 750px;
   }
 
   .link {
     color: black;
-    
   }
 
   /* end of zw */
 
+  /* benpoetry */
+  .kirbyBen {
+    position: absolute;
+    right: 1150px;
+    top: 300px;
+  }
+
   /* project deatil */
-
-  .page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-
-  .main {
-    color: black;
-    padding: 30px 15px 30px 15px;
-  }
-
-  .container1 {
-    width: 100%;
-    margin: auto;
-  }
-
-  .back-link {
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 700;
-    color:black;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
   .spacer-20 {
     height: 20px;
   }
 
-  .spacer-50 {
-    height: 50px;
+  .imageNextButton {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    color: black;
   }
 
-  .project-detail-card {
-    background-color:white;
-    border-radius: 3px;
-  }
-
-  .project-detail-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
-    margin: 0px;
+  .imageNextContainer {
+    position: relative;
+    max-width: 630px;
+    
   }
 
   .project-detail-img {
-    object-fit: cover;
+    max-width: 530px;
+    max-height: 395px;
+    width: auto;
+    height: auto;
+  
     
-    width: 100%;
-
-    aspect-ratio: 1;
   }
 
-  .project-detail-text {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgb(218, 183, 249);
-  }
-
-  .project-detail-title {
-    font-size: 34px;
-    line-height: 34px;
-    padding-bottom: 10px;
-  }
-
-  .section-container {
-    display: flex;
-    padding: 15px 0px 10px 0px;
-  }
-
-  .icon {
-    font-size: 18px;
-  }
-
-  .icon-text {
-    align-self: center;
-    height: 25px;
-  }
 
   .project-detail-heading {
     font-size: 16px;
@@ -588,14 +536,129 @@ body {
     padding: 30px 0px 0px 0px;
   }
 
-  .horizontal-line {
-    border-top: 1px #eef4f4 solid;
-    margin-top: 10px;
+
+ 
+
+  .parent-btn1:hover::before {
+    content: "About";
+    position: absolute;
+    top: -5%; 
+    left: 10%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
   }
 
-  .github-project {
-    padding: 10px 0px 0px 0px;
+  .parent-btn2:hover::before {
+    content: "Collaborators";
+    position: absolute;
+    top: 0;
+    left: 35%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
   }
 
-  /* end of project deatil */
+  .parent-btn3:hover::before {
+    content: "Tech Stack";
+    position: absolute;
+    top: 0;
+    left: 63%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .parent-btn4:hover::before {
+    content: "Links";
+    position: absolute;
+    top: 0; 
+    left: 88%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .about-btn {
+    font-size: 20px;
+  }
+
+  
+
+  .parent-btn1,
+  .parent-btn2,
+  .parent-btn3,
+  .parent-btn4 {
+    background-color: white;
+    border: none;
+    color: none;
+  }
+
+  .tech-stack-buttons {
+    background-color: rgb(218, 183, 249);
+    border: none;
+    color: none;
+  }
+
+  .techstack-section {
+    padding-top: 15px;
+  }
+
+
+  .container-project-desktop {
+    background: url("../public/largewindowbackground.png") no-repeat;
+    background-size: 1000px;
+    background-position: center center;
+    display: grid;
+    justify-content: start;
+    padding-left: 20%;
+  }
+
+
+  .intro-bubble-proj-container {
+   display: flex;
+   justify-content: end;
+   padding-top: 15px;
+  }
+
+  .intro-bubble-proj {
+    width: 350px;
+  }
+
+  .container-buttons-project-details {
+   width: 850px;
+   height:400px;
+   padding-top: 300px;
+  }
+
+  .project-info-screen {
+    width: 850px;
+    display: grid;
+    position: relative;
+  }
+
+  .grid-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+    left: 35%;
+    bottom: -126%;
+    position: absolute;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
 }

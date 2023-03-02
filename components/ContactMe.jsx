@@ -12,7 +12,7 @@ export default function ContactMe() {
 
       <div className=""> {/* "jobTitleIntroBubbleContainer */}
         <div className="titleContainer">
-          <i class="kirbyContact nes-kirby is-small"></i>
+          <i className="kirbyContact nes-kirby is-small"></i>
          {/*  <h1 className="contactTitle">
             Contact Me
           </h1> */}

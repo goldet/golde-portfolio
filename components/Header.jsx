@@ -13,7 +13,7 @@ const Header = () => {
         <Link href="/"> 
           <button
             type="button"
-            class="navButtons nes-btn is-normal"
+            className="navButtons nes-btn is-normal"
             color="primary"
             background-color="none"
           >
@@ -24,7 +24,7 @@ const Header = () => {
           <Link href="/about"> 
           <button
             type="button"
-            class="nes-btn is-primary"
+            className="nes-btn is-primary"
             color="primary"
             background-color="none"
           >
@@ -35,7 +35,7 @@ const Header = () => {
           <Link href="/contact"> 
           <button
             type="button"
-            class="nes-btn is-success"
+            className="nes-btn is-success"
             color="primary"
             background-color="none"
           >
