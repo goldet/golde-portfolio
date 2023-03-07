@@ -100,6 +100,7 @@ const BenPoetryProject = () => {
       {!showContent && (
         
         <div className="background-image" style={{ position: "relative" }}>
+          <Link className="invisible-delete-project-open-prompt" href="/"></Link>
           <Image
           className="project-detail-img"
             src={bpopenprompt}
@@ -121,10 +122,13 @@ const BenPoetryProject = () => {
       )}
 
 {showContent && ( 
-
+   
       <div className="container-project-desktop">
+        <Link className="invisible-delete-project" href="/"></Link>
         <div className="container-project-desktop-content">
+       
           <div className="project-info-screen">
+          
             <div className="container-buttons-project-details">
               <div className="image-and-bubble">
                 {isWide && showAbout ? (
@@ -197,7 +201,7 @@ const BenPoetryProject = () => {
                     href="https://github.com/DanNisenson"
                     target="blank"
                   >
-                    <li>Dan Nisenson</li>
+                    <div className="text">Dan Nisenson</div>
                     <div className="spacer-20"></div>
                   </Link>
                   <p>
@@ -257,8 +261,6 @@ const BenPoetryProject = () => {
           </div>
 
           <div className="spacer-750"></div>
-          <button className="show-content-button" onClick={handleContentClickFalse}> GO BACK</button>
-
         </div>
       </div> )}
       <Footer />
