@@ -17,6 +17,7 @@ const datas = {
 const NewZeroWasteProject = () => {
   const [selectedItem, setSelectedItem] = useState("Zero Waste");
 
+
   const getClassNames = (index) => {
     const baseClass = `content content_${index}`;
     return selectedItem === index ? `${baseClass} active` : baseClass;
@@ -42,7 +43,7 @@ const NewZeroWasteProject = () => {
                 checked={selectedItem === index}
                 onChange={() => setSelectedItem(index)}
               />
-              <label htmlFor={`radio_${val}`} className={`label_${index}`}>
+              <label htmlFor={`radio_${index}`} className={`label_${index}`}>
                 {index}
               </label>
               <div className={getClassNames(index)}>
