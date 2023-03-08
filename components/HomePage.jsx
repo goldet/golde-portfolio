@@ -3,6 +3,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useState, useEffect } from "react";
 import GridProjects from "./GridProjects";
+import styles from "../styles/homepage.module.css";
+import NewZeroWasteProject from "./zerowaste/NewZeroWasteProject";
+import BenPoetryProject from "./benpoetry/BenPoetryProject";
 
 export default function HomePage() {
   const dataText = ["F ull Stack Developer"];
@@ -50,7 +53,17 @@ export default function HomePage() {
           <div className="spacer-50"></div>
           <div id="full">
             <GridProjects />
+            <div className="spacer-50"></div>
+            <div className="spacer-50"></div>
+            <div className="spacer-50"></div>
           </div>
+
+          <NewZeroWasteProject id="zero-waste"/>
+          <div className="spacer-50"></div>
+          <div className="spacer-50"></div>
+          <BenPoetryProject id="ben-poetry"/>
+          <div className="spacer-50"></div>
+
           <Footer />
         </div>
       )}

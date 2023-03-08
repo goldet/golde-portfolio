@@ -6,7 +6,13 @@ import Link from "next/link";
 const GridProjects = () => {
   return (
     <div className="cards-list">
-      <Link href="/zerowaste">
+      <Link href="#zero-waste"
+       ><a onClick={() => {
+        document.querySelector('#zero-waste').scrollIntoView({
+          behavior: 'smooth',
+          duration: 2000
+        });
+      }}> </a>
         <div className="card 2">
           <div className="card_image">
             <img
@@ -20,7 +26,13 @@ const GridProjects = () => {
         </div>
       </Link>
 
-      <Link href="/benshroederpoetry">
+      <Link href="#ben-poetry">
+      <a onClick={() => {
+        document.querySelector('#ben-poetry').scrollIntoView({
+          behavior: 'smooth',
+          duration: 3000
+        });
+      }}> </a>
         <div className="card 3">
           <div className="card_image">
             <img src="https://media.giphy.com/media/uE3HvGWGb2DfGaRXud/giphy.gif" />

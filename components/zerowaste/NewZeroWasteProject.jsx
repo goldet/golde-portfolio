@@ -1,7 +1,9 @@
 import Header from "../Header";
 import zwhero from "../../public/zwhero.png";
+import zerowastelaptop from "../../public/zerowastelaptop.png";
 import Image from "next/image";
 import { useState } from "react";
+import styles from "../../styles/projectdetail.module.css";
 
 const datas = {
   "Zero Waste":
@@ -14,50 +16,42 @@ const datas = {
     "Check out the project here: or visit the project on github: github.com/goldet/zero-waste.",
 };
 
-const NewZeroWasteProject = () => {
+const NewZeroWasteProject = ({ id }) => {
   const [selectedItem, setSelectedItem] = useState("Zero Waste");
-
 
   const getClassNames = (index) => {
     const baseClass = `content content_${index}`;
     return selectedItem === index ? `${baseClass} active` : baseClass;
   };
 
-
-
   return (
     <>
-   
-   <Header />
-    
-   <div id="scene">
-      <div id="left-zone">
-        <ul className="list">
-          {Object.entries(datas).map(([index, val]) => (
-            <li key={index} className="item">
-              <input
-                type="radio"
-                id={`radio_${index}`}
-                name="basic_carousel"
-                value={index}
-                checked={selectedItem === index}
-                onChange={() => setSelectedItem(index)}
-              />
-              <label htmlFor={`radio_${index}`} className={`label_${index}`}>
-                {index}
-              </label>
-              <div className={getClassNames(index)}>
-                <span className="picto"></span>
-                <h1>{index}</h1>
-                <p>{val}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+    <div id={id} className="container-project-and-heading">
+      <h1 className="project-heading">Projects</h1>
+      <div className="container-mockup-text">
+        <div className="mockup">
+          <Image
+            src={zerowastelaptop}
+            alt="Image of zero waste hero page"
+            width={"500"}
+            height={"400px"}
+          />
+        </div>
+        <div className="project-text">
+          <h1>Zero Waste</h1>
+          <p>
+            Use this web application to reduce food waste and get in touch with
+            your community. Post food you want to give away or food you need.
+            Search products by type or by location.
+          </p>
+          <p>Made with</p>
+          <p>Next.Js Tailwind Css Express.Js MySQL</p>
+          <div>
+            <button>Live Site</button> <button>github</button>
+          </div>
+        </div>
       </div>
-      <div id="middle-border"></div>
-      <div id="right-zone"></div>
-    </div>
+      </div>
     </>
   );
 };
