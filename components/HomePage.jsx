@@ -38,19 +38,20 @@ export default function HomePage() {
         <span aria-hidden="true"></span>
       </h1>
 
-      <div class="containerArrow">
-        <a className="arrowScroll" data-scroll href="#full">
-          <div class="arrow"></div>
-        </a>
-      </div>
-      <div className="spacer-50"></div>
-      <div className="spacer-50"></div>
-
       {typingComplete && (
-        <div id="full">
-          {" "}
+        <div>
+          <div class="containerArrow">
+            <a className="arrowScroll" data-scroll href="#full">
+              <div class="arrow"></div>
+            </a>
+          </div>
           <div className="spacer-50"></div>
-          <GridProjects /><div className="spacer-250"></div> <Footer />{" "}
+          <div className="spacer-50"></div>
+          <div className="spacer-50"></div>
+          <div id="full">
+            <GridProjects />
+          </div>
+          <Footer />
         </div>
       )}
     </>
