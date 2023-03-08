@@ -4,6 +4,7 @@ import Image from "next/image";
 import newbenhero from "../../public/newbenhero.png";
 import benpoetlaptop from "../../public/benpoetlaptop.png";
 import newmobilebenhero from "../../public/newmobilebenhero.png";
+import styles from "../../styles/projectdetail.module.css";
 
 import { useMedia } from "react-use";
 

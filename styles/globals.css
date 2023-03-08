@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;0,1000;1,200;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Play&family=Press+Start+2P&display=swap");
 @import url("homepage.module.css");
 @import url("projectdetail.module.css");
+@import url("projectgrid.module.css");
+
 
 
 * {
@@ -16,20 +18,19 @@ body {
 }
 
 
-
-
 /* header */
 
 .firstName {
   color: black;
   text-decoration: none;
-  background-color: rgb(161, 178, 248);
+  /* background-color: rgb(161, 178, 248); */
+  background-color:rgb(218, 183, 249);
   padding-left: 5px;
   padding-right: 5px;
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 40px;
-  border-color: rgb(104, 176, 247);
+  border-color: rgb(218, 183, 249);
   border-width: 6px;
 }
 
@@ -69,7 +70,7 @@ body {
   margin-top: 80px;
   margin-left: 10px;
   letter-spacing: -1px;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P";
   display: block;
 
   word-spacing: -20px;
@@ -114,56 +115,6 @@ span {
 
 }
 
-.titleContaner {
-  position: relative;
-}
-
-.kirby {
-  position: absolute;
-  right: 35px;
-  top: 180px;
-}
-
-.introBubble {
-  margin-top: 30px;
-}
-
-.portfolioGrid {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-}
-
-.img {
-  display: block;
-  justify-content: start;
-  width: 100%;
-  box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.06);
-  height: 400px;
-}
-
-.speedDial {
-  background-color: none;
-  color: none;
-}
-
-.portfolioTitle {
-  background: none;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
-    0 -1px 1px #000, 1px 1px 0 #000;
-  font-weight: 800;
-  font-size: 25px;
-}
-
-.portfolioDescription {
-  background: none;
-}
-
-/* end of home */
 
 /* contact page */
 
@@ -232,85 +183,12 @@ span {
 
 /* end of about me page */
 
-/* zw */
-
-.kirbyZW {
-  position: absolute;
-  right: 250px;
-  top: 560px;
-}
-
-.introBubbleContainerZW {
-  margin-top: 10%;
-  margin-bottom: 50%;
-}
-
-.ZWTitle {
-  background: none;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
-    0 -1px 1px #000, 1px 1px 0 #000;
-  font-weight: 800;
-  font-size: 42px;
-  margin-top: 30px;
-  margin-left: 10px;
-}
-/* end of zw */
-
-/* BenP */
-
-.kirbyBen {
-  position: absolute;
-  right: 250px;
-  top: 460px;
-}
-
-.introBubbleContainerZW {
-  margin-top: 10%;
-  margin-bottom: 50%;
-}
-
-/* end benP */
-
-/* project deatil */
-
-.page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-.main {
-  color: black;
-  padding: 30px 15px 30px 15px;
-}
-
-.container1 {
-  width: 100%;
-  margin: auto;
-}
-
-.back-link {
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-  padding-left: 14px;
-}
-
 
 
 .spacer-750 {
   height: 750px;
 }
 
-
-.spacer-500 {
-  height: 500px;
-}
 
 .spacer-50 {
   height: 50px;
@@ -322,65 +200,6 @@ span {
   padding: 10px 0px 0px 0px;
 }
 
-
-
-.cards-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  
-}
-
-.card {
-  height: 300px;
-  width: 300px;
-  border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-  cursor: pointer;
-  transition: 0.4s;
-  
-}
-
-.card .card_image {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-}
-
-.card .card_image img {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-  object-fit: cover;
-}
-
-.card .card_title {
-  text-align: center;
-  border-radius: 0px 0px 40px 40px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-}
-
-.card:hover {
-  transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
-}
-
-.title-white {
-  color: white;
-}
-
-.title-black {
-  color: black;
-}
-
-
-
-/* end of project deatil */
 
 /* footer */
 
@@ -423,19 +242,7 @@ span {
     margin-bottom: 30px;
   }
 
-  .kirby {
-    position: absolute;
-    right: 850px;
-    top: 230px;
-  }
 
-  .introBubble {
-    width: 400px;
-    position: absolute;
-    top: 80px;
-    left: 590px;
-    font-size: 14px;
-  }
 
   /* playing with homepage CHANGE CSS*/
   .jobTitle {
@@ -443,7 +250,7 @@ span {
     color: #fff;
     text-decoration: none;
     letter-spacing: 0;
-    font-family: "Press Start 2P", cursive;
+    font-family: "Press Start 2P";
     text-shadow: 2px 2px 2px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
       0 -1px 1px #000, 1px 1px 0 #000;
     font-weight: 800;
@@ -477,9 +284,6 @@ span {
     transition: border-width 150ms ease-in-out;
   }
 
- /*  .arrowScroll {
-    scroll-behavior: smooth;
-  } */
   
   .arrow:hover {
     border-bottom-width: 4px;
@@ -498,22 +302,14 @@ span {
 
   }
 
-  .jobTitleIntroBubbleContainer {
-    display: flex;
-    gap: 217px;
-  }
-
   .header {
     display: flex;
     justify-content: space-between;
   }
 
-  .speedDial {
-    background-color: none;
-    color: none;
-  }
 
-  .homepage-category-text {
+
+/*   .homepage-category-text {
     background: none;
     color: #fff;
     text-decoration: none;
@@ -526,11 +322,11 @@ span {
     margin-top: 80px;
     margin-left: 10px;
     letter-spacing: -1px;
-    font-family: "Press Start 2P", cursive;
+    font-family: "Press Start 2P";
     display: block;
   
     word-spacing: -20px;
-  }
+  } */
 
   /* contact */
 
@@ -625,215 +421,7 @@ span {
 
   /* end of zw */
 
-  /* benpoetry */
-  .kirbyBen {
-    position: absolute;
-    right: 1150px;
-    top: 300px;
-  }
-
-  /* project deatil */
-
-
-  .imageNextButton {
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    color: black;
-  }
-
-  .imageNextContainer {
-    position: relative;
-    max-width: 630px;
-  }
-
-  .project-detail-img {
-    max-width: 530px;
-    max-height: 395px;
-    width: auto;
-    height: auto;
-  }
-
-  .project-detail-heading {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700;
-    padding: 25px 0px 0px 0px;
-  }
-
-  .parent-btn1:hover::before {
-    content: "About";
-    position: absolute;
-    top: -5%;
-    left: 10%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-
-  .parent-btn2:hover::before {
-    content: "Collaborators";
-    position: absolute;
-    top: 0;
-    left: 35%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-
-  .parent-btn3:hover::before {
-    content: "Tech Stack";
-    position: absolute;
-    top: 0;
-    left: 63%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-
-  .parent-btn4:hover::before {
-    content: "Links";
-    position: absolute;
-    top: 0;
-    left: 88%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-
-  .about-btn {
-    font-size: 20px;
-  }
-
-  .parent-btn1,
-  .parent-btn2,
-  .parent-btn3,
-  .parent-btn4 {
-    background-color: white;
-    border: none;
-    color: none;
-  }
-
-  .tech-stack-buttons {
-    background-color: rgb(218, 183, 249);
-    border: none;
-    color: none;
-  }
-
-  .techstack-section {
-    padding-top: 15px;
-  }
-
-  .container-project-desktop {
-    background: url("../public/largewindowbackground.png") no-repeat;
-    background-size: 1000px;
-    background-position: center center;
-    display: grid;
-    justify-content: start;
-    padding-left: 20%;
-    height: 900px;
-  }
-
-  .intro-bubble-proj-container {
-    display: flex;
-    justify-content: end;
-    padding-top: 15px;
-  }
-
-  .intro-bubble-proj {
-    width: 350px;
-    font-size: 10px;
-  }
-
-  .container-buttons-project-details {
-    width: 850px;
-    height: 375px;
-    padding-top: 180px;
-  }
-
-  .project-info-screen {
-    width: 850px;
-    display: grid;
-    position: relative;
-  }
-
-  .grid-buttons {
-    display: flex;
-    gap: 30px;
-    justify-content: end;
-    left: 35%;
-    bottom: -108%;
-    position: absolute;
-    padding-top: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  .show-content-button {
-    background: transparent;
-    border: none;
-    outline: none;
-    display: block;
-    height: 50px;
-    width: 80px;
-  }
-
-  .show-content-button:focus {
-    outline: none;
-  }
-
-  .background-image {
-    display: flex;
-    justify-content: center;
-  }
 
 
 
-  .text {
-    font-family: "Press Start 2P", cursive;
-    font-size: 18px;
-  }
-
-  .invisible-delete-project {
-    position: absolute;
-    left: 17%;
-    top: 30%;
-    background: transparent;
-    border: none;
-    outline: none;
-    display: block;
-    height: 50px;
-    width: 80px;
-  }
-
-  .invisible-delete-project-open-prompt {
-    position: absolute;
-    left: 35%;
-    top: 10%;
-    background: transparent;
-    border: none;
-    outline: none;
-    display: block;
-    height: 50px;
-    width: 80px;
-  }
 }
-
-/* @media all and (max-width: 500px) {
-  .card-list {
-   
-    flex-direction: column;
-  }
-} */

@@ -2,6 +2,7 @@ import Image from "next/image";
 import zwhero from "../public/zwhero.png";
 import newbenhero from "../public/newbenhero.png";
 import Link from "next/link";
+import styles from "../styles/projectgrid.module.css";
 
 const GridProjects = () => {
   return (
@@ -21,7 +22,7 @@ const GridProjects = () => {
             />
           </div>
           <div className="card_title title-black">
-            <p>Zero Waste</p>
+            <p className="card-text">Zero Waste</p>
           </div>
         </div>
       </Link>
@@ -38,7 +39,7 @@ const GridProjects = () => {
             <img src="https://media.giphy.com/media/uE3HvGWGb2DfGaRXud/giphy.gif" />
           </div>
           <div className="card_title title-white">
-            <p>Ben Schroder Poetry</p>
+            <p className="card-text">Ben Schroder Poetry</p>
           </div>
         </div>
       </Link>
@@ -48,7 +49,7 @@ const GridProjects = () => {
           <img src="https://media.giphy.com/media/KzeZ3OXHoSDVZH9cmy/giphy.gif" />
         </div>
         <div className="card_title title-black">
-          <p>Coming Soon: Freelance Code</p>
+          <p className="card-text">Coming Soon: Freelance Code</p>
         </div>
       </div>
 
@@ -57,7 +58,7 @@ const GridProjects = () => {
           <img src="https://media.giphy.com/media/fTa7ddWK86iWs/giphy.gif" />
         </div>
         <div className="card_title title-white">
-          <p>Feature Extension: Freecycle</p>
+          <p className="card-text">Feature Extension: Freecycle</p>
         </div>
       </div>
     </div>
