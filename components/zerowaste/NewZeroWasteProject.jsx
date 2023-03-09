@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "../../styles/projectdetail.module.css";
 
-const datas = {
+/* const datas = {
   "Zero Waste":
     "A web application to reduce food waste and promote community. You can post foods you have to give away or foods you need. You can contact people based on your location to start sharing!",
   Collaborators:
@@ -14,15 +14,15 @@ const datas = {
     "This web app was made using Next.JS, Tailwind and CSS, Express.JS, and MySQL",
   Explore:
     "Check out the project here: or visit the project on github: github.com/goldet/zero-waste.",
-};
+}; */
 
 const NewZeroWasteProject = ({ id }) => {
-  const [selectedItem, setSelectedItem] = useState("Zero Waste");
+/*   const [selectedItem, setSelectedItem] = useState("Zero Waste");
 
   const getClassNames = (index) => {
     const baseClass = `content content_${index}`;
     return selectedItem === index ? `${baseClass} active` : baseClass;
-  };
+  }; */
 
   return (
     <>

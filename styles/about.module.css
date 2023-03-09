@@ -10,26 +10,28 @@
 }
 
 .about-name {
-  align-items: start;
-  flex-direction: column;
-}
-
-.about-name {
   color: white;
-  /* padding-left: 9%; */
   font-size: 38px;
   text-decoration: underline;
   text-decoration-color: #76c442;
-}
-
-.skills-heading {
-  align-items: start;
+  align-items: center;
   flex-direction: column;
 }
 
-.skills-heading{
+.about-heading {
+  font-size: 38px;
+}
+
+.svg {
+  height: 6rem;
+  width: 6rem;
+}
+
+.skills-heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   color: white;
-  /* padding-left: 9%; */
   font-size: 38px;
   text-decoration: underline;
   text-decoration-color: rgb(218, 183, 249);
@@ -39,6 +41,9 @@
   align-items: stretch;
   margin: 45px 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image {
@@ -50,6 +55,7 @@
 
 .about-text {
   width: 60%;
+ 
 }
 
 .about-text,
@@ -66,10 +72,16 @@
   display: flex;
 }
 
+
 .about-me-container .about-pic {
-  margin-right: 30px;
-  width: 35%;
   align-self: start;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.image {
+    width: 300px;
+    height: 300px;  
 }
 
 .spacer {
@@ -90,9 +102,8 @@
 }
 
 .skills-container {
-  flex-wrap: wrap;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 .skills-container,
@@ -101,58 +112,25 @@
   text-decoration: none;
   list-style: none;
   color: #f8f8f8;
-  padding: 0;
+  padding: 20px;
   border: none;
   margin: 0;
-}
-
-.skills-container {
-  /* display: block; */
-
-  margin: 55px;
 }
 
 .skills-title span {
   font-size: 6.5rem;
 }
-.devicons {
-  font-family: "devicons";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-}
 
-/* 
-h2,
-h3,
-h4, */
-.skills
-.about-name
-/* button,
-label,
-p */ {
+.skills,
+.about-name {
   font-weight: bold;
   text-transform: uppercase;
 }
 
-/* 
-h2,
-h3,
-h4,
-h5,
-p,
-button,
-form,
-a,
-input,
-textarea,
-label, */
 .about-name,
 .skills-container,
 .skills-title {
   margin: 5px;
-  padding: 0;
   border: none;
 }
 
@@ -171,4 +149,95 @@ label, */
   color: #f8f8f8;
   line-height: 1.6;
   letter-spacing: 1.5px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* for tablets */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .about-me-container {
+    align-items: stretch;
+    margin: 45px 0;
+    width: 100%;
+  }
+
+  .about-me-container .about-pic {
+    margin-right: 30px;
+      width: 35%;  
+     align-self: start;
+   }
+
+   .about-me-container {
+    align-items: stretch;
+    margin: 45px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .about-text {
+    width: 85%;
+   
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .about-me-container {
+    align-items: stretch;
+    margin: 45px 0;
+    width: 100%;
+  }
+
+  .about-me-container .about-pic {
+    margin-right: 30px;
+      width: 35%;  
+     align-self: start;
+   }
+
+   .about-me-container .about-pic {
+    align-self: start;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  .image {
+      width: 100%;
+      height: 100%;  
+      
+  }
+
+  .about-me-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    align-items: stretch;
+    margin: 45px 0;
+    width: 100%;
+    justify-content: center;
+    padding-right: 20px;
+    
+    
+  }
+
+  .wrapper {
+    min-width: 1328px;
+    margin: 0;
+    width: 90%;
+   
+  }
+
+  .about-text {
+    width: 85%;
+   
+  }
 }
