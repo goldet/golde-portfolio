@@ -1,0 +1,174 @@
+.about-me {
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.about-name {
+  align-items: start;
+  flex-direction: column;
+}
+
+.about-name {
+  color: white;
+  /* padding-left: 9%; */
+  font-size: 38px;
+  text-decoration: underline;
+  text-decoration-color: #76c442;
+}
+
+.skills-heading {
+  align-items: start;
+  flex-direction: column;
+}
+
+.skills-heading{
+  color: white;
+  /* padding-left: 9%; */
+  font-size: 38px;
+  text-decoration: underline;
+  text-decoration-color: rgb(218, 183, 249);
+}
+
+.about-me-container {
+  align-items: stretch;
+  margin: 45px 0;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
+.about-text {
+  width: 60%;
+}
+
+.about-text,
+.about-name,
+.skills-title {
+  flex-direction: column;
+}
+
+.about-pic,
+.about-name,
+.about-me-container,
+.about-text,
+.skills-title {
+  display: flex;
+}
+
+.about-me-container .about-pic {
+  margin-right: 30px;
+  width: 35%;
+  align-self: start;
+}
+
+.spacer {
+  height: 20vh;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.skills {
+  height: 100%;
+  margin: 6% auto;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.skills-container {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.skills-container,
+.skills-title,
+.link {
+  text-decoration: none;
+  list-style: none;
+  color: #f8f8f8;
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
+.skills-container {
+  /* display: block; */
+
+  margin: 55px;
+}
+
+.skills-title span {
+  font-size: 6.5rem;
+}
+.devicons {
+  font-family: "devicons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+/* 
+h2,
+h3,
+h4, */
+.skills
+.about-name
+/* button,
+label,
+p */ {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* 
+h2,
+h3,
+h4,
+h5,
+p,
+button,
+form,
+a,
+input,
+textarea,
+label, */
+.about-name,
+.skills-container,
+.skills-title {
+  margin: 5px;
+  padding: 0;
+  border: none;
+}
+
+.skills-title,
+.about-text {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.about-text {
+  font-size: 1rem;
+  font-family: "Sen", sans-serif;
+  background-color: #030200;
+  color: #f8f8f8;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+}

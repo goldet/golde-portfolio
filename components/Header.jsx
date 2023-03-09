@@ -21,16 +21,23 @@ const Header = () => {
           </button>
           </Link>
 
-          <Link href="/about"> 
+          <Link href="#about"> 
           <button
             type="button"
             className="nes-btn is-primary"
             color="primary"
             background-color="none"
+            onClick={() => {
+              document.querySelector('#zero-waste').scrollIntoView({
+                behavior: 'smooth',
+                duration: 2000
+              });
+            }}
           >
            About Me
           </button>
           </Link>
+
 
           <Link href="/contact"> 
           <button

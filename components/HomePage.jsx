@@ -6,6 +6,7 @@ import GridProjects from "./GridProjects";
 import styles from "../styles/homepage.module.css";
 import NewZeroWasteProject from "./zerowaste/NewZeroWasteProject";
 import BenPoetryProject from "./benpoetry/BenPoetryProject";
+import AboutMe from "./AboutMe";
 
 export default function HomePage() {
   const dataText = ["F ull Stack Developer"];
@@ -59,10 +60,11 @@ export default function HomePage() {
           </div>
 
           <NewZeroWasteProject id="zero-waste"/>
-          <div className="spacer-50"></div>
-          <div className="spacer-50"></div>
+        
+          <div className="spacer"></div>
           <BenPoetryProject id="ben-poetry"/>
-          <div className="spacer-50"></div>
+          <div className="spacer"></div>
+          <AboutMe id="about"/>
 
           <Footer />
         </div>
