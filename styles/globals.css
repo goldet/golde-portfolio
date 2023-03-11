@@ -4,6 +4,7 @@
 @import url("projectdetail.module.css");
 @import url("projectgrid.module.css");
 @import url("about.module.css");
+@import url("contact.module.css");
 
 * {
   font-family: "Mulish", sans-serif;

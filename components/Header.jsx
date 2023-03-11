@@ -39,7 +39,7 @@ const Header = () => {
           </Link>
 
 
-          <Link href="/contact"> 
+          <Link href="#contact"> 
           <button
             type="button"
             className="nes-btn is-success"

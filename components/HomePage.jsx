@@ -7,6 +7,7 @@ import styles from "../styles/homepage.module.css";
 import NewZeroWasteProject from "./zerowaste/NewZeroWasteProject";
 import BenPoetryProject from "./benpoetry/BenPoetryProject";
 import AboutMe from "./AboutMe";
+import ContactMe from "./ContactMe";
 
 export default function HomePage() {
   const dataText = ["F ull Stack Developer"];
@@ -36,7 +37,8 @@ export default function HomePage() {
 
   return (
     <>
-      <Header />
+     {typingComplete && <Header />} 
+     {!typingComplete && <div className="spacer-50"></div>}
       <h1 className="jobTitle">
         {text}
         <span aria-hidden="true"></span>
@@ -65,6 +67,8 @@ export default function HomePage() {
           <BenPoetryProject id="ben-poetry"/>
           <div className="spacer"></div>
           <AboutMe id="about"/>
+
+          <ContactMe id="contact"/>
 
           <Footer />
         </div>
