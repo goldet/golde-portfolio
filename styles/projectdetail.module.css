@@ -71,6 +71,17 @@
     margin-top: 0vh;
     
   }
+
+  .project-text {
+    flex-direction: column;
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    font-family: "Sen", sans-serif;
+    background-color: #030200;
+    color: #f8f8f8;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -98,6 +109,17 @@
 
   .mockup {
     margin-right: 50px;
+  }
+
+  .project-text {
+    flex-direction: column;
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    font-family: "Sen", sans-serif;
+    background-color: #030200;
+    color: #f8f8f8;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
   }
 
   .mockup,

@@ -22,7 +22,7 @@ const NewZeroWasteProject = ({ id }) => {
           />
         </div>
         <div className="project-text">
-          <h1>Zero Waste</h1>
+          <h1 >Zero Waste</h1>
           <p>
             Use this web application to reduce food waste and get in touch with
             your community. Post food you want to give away or food you need.
