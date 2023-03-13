@@ -10,6 +10,22 @@
   align-items: center;
 }
 
+.project-links {
+  background-color: none;
+  color: white;
+  font-size:larger;
+  font-weight: bold;
+}
+.project-links:hover {
+  text-decoration: underline;
+  text-decoration-color: #369cee;
+  color: white;
+  text-decoration-thickness: 3px;
+  
+}
+
+
+
 .project-heading {
   color: white;
   display: flex;

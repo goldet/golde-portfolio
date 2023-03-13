@@ -32,7 +32,7 @@ const BenPoetryProject = ({ id }) => {
             <p>Made with</p>
             <p>Next.Js Tailwind Css</p>
             <div>
-              <button>Live Site</button> <button>github</button>
+             {/*  <button>Live Site</button> */} <a className="project-links" href="https:github.com/goldet/benspoetryapp">github </a>
             </div>
           </div>
         </div>

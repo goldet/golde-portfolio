@@ -1,35 +1,36 @@
 .container-project-and-heading {
-    margin-top: 60vh;
-    display: flex;
-    flex-direction: column;
-  }
+  margin-top: 60vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  .contact-heading {
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-size: 38px;
-    text-decoration: underline;
-    text-decoration-color: #369cee;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+.contact-heading {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 38px;
+  text-decoration: underline;
+  text-decoration-color: #369cee;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
-  .container-pic-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.container-pic-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .contact-text {
-    flex-direction: column;
-    font-family: "Mulish", sans-serif;
-    font-size: 1.1rem;
-    font-family: "Sen", sans-serif;
-    color: #030200;
-    line-height: 1.6;
-    letter-spacing: 1.5px;
-  }
+.contact-text {
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.1rem;
+  font-family: "Sen", sans-serif;
+  color: #030200;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+
+}
 
 .form,
 .contact-text {
@@ -38,23 +39,66 @@
   justify-content: center;
 }
 
-.kirby-contact {
-    
-}
-  
 
-  @media only screen and (min-width: 600px) {
-    /* tablet */
-    .container-project-and-heading {
-        margin-top: 0vh;
-      }
- 
+.contact-form-text,
+.reach-out,
+.phone-icon {
+  color: white;
+}
+
+
+.contact-form-text {
+  display: flex;
+  flex-direction: inherit;
+  padding-top: 8px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.form-input {
+  width: 400px;
+}
+
+.success-message {
+  color: #5FCC4D;
+}
+
+.contact-error-form-text {
+  color: #E53D38;
+}
+
+.submit-button {
+  background-color:  #369cee;
+  border:  #369cee;
+  color: white;
+  margin-top: 10px;
+  padding: 8px 30px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 16px;
+}
+
+.call-section {
+  display: flex;
+  gap:10px;
+}
+
+.phone-icon {
+  align-items: center;
+  margin-top:9px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* tablet */
+  .container-project-and-heading {
+    margin-top: 0vh;
+  }
 
   .container-pic-text {
     display: flex;
-    padding-top:20px;
-    margin-top:5px;
-    
+    padding-top: 20px;
+    margin-top: 5px;
   }
 
   .form {
@@ -67,21 +111,24 @@
     display: flex;
     justify-content: center;
   }
+
+  .form {
+    padding-top: 60px;
+  }
+
 }
 
-  @media only screen and (min-width: 768px) {
-    /* laptop */
-    .container-project-and-heading {
-        margin-top: 0vh;
-      }
-  
+@media only screen and (min-width: 768px) {
+  /* laptop */
+  .container-project-and-heading {
+    margin-top: 0vh;
+  }
 
   .container-pic-text {
     display: flex;
     flex-direction: row;
-    padding-top:20px;
-    margin-top:5px;
-   
+    padding-top: 20px;
+    margin-top: 5px;
   }
 
   .form {
@@ -92,6 +139,12 @@
   .contact-text {
     width: calc(50% - 50px);
     display: flex;
+    justify-content: center;
+  }
+.form-container {
+  width: calc(50% - 50px);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 }

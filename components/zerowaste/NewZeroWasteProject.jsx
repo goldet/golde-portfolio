@@ -31,7 +31,7 @@ const NewZeroWasteProject = ({ id }) => {
           <p>Made with</p>
           <p>Next.Js Tailwind Css Express.Js MySQL</p>
           <div>
-            <button>Live Site</button> <button>github</button>
+            {/* <button>Live Site</button> */} <a className="project-links" href="https:github.com/goldet/zero-waste">github</a>
           </div>
         </div>
       </div>

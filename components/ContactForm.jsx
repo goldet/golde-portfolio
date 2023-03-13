@@ -85,111 +85,98 @@ export default function ContactForm() {
     console.log(fullname, email, subject, message);
   };
   return (
-    <main>       
-        <form
-          onSubmit={handleSubmit}
-          className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
-        >
-          <h1 className="contact-form-heading">
-            Send a message
-          </h1>
+    <main className="form-container">
+      <form
+        onSubmit={handleSubmit}
+        className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
+      >
+{/*         <h1 className="contact-form-heading">Send a message</h1>
+ */}
+        <label htmlFor="fullname" className="contact-form-text">
+          Full Name<div className="contact-error-form-text">*</div>
+        </label>
+        <input
+          className="form-input"
+          type="text"
+          value={fullname}
+          onChange={(e) => {
+            setFullname(e.target.value);
+          }}
+          name="fullname"
+        />
+        {errors?.fullname && (
+          <p className="contact-error-form-text">Full name cannot be empty.</p>
+        )}
 
-          <label
-            htmlFor="fullname"
-            className="contact-form-text"
-          >
-            Full Name<span className="contact-error-form-text">*</span>
-          </label>
-          <input
-            type="text"
-            value={fullname}
-            onChange={(e) => {
-              setFullname(e.target.value);
-            }}
-            name="fullname"
-          />
-          {errors?.fullname && (
-            <p className="contact-error-form-text">Full name cannot be empty.</p>
-          )}
-
-          <label
-            htmlFor="email"
-            className="contact-form-text"
-          >
-            E-mail<span className="contact-error-form-text">*</span>
-          </label>
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-          {errors?.email && (
-            <p className="contact-error-form-text">Email cannot be empty.</p>
-          )}
-          <label
-            htmlFor="message"
-            className="contact-form-text"
-          >
-            Message<span className="contact-error-form-text">*</span>
-          </label>
-          <textarea
-            name="message"
-            value={message}
-            onChange={(e) => {
-              setMessage(e.target.value);
-            }}
-          ></textarea>
-          {errors?.message && (
-            <p className="contact-error-form-text">Message body cannot be empty.</p>
-          )}
-          <div className="flex flex-row items-center justify-start">
-            <button
-              type="submit"
-              className="submit-button"
+        <label htmlFor="email" className="contact-form-text">
+          E-mail<div className="contact-error-form-text">*</div>
+        </label>
+        <input
+          className="form-input"
+          type="email"
+          name="email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        />
+        {errors?.email && (
+          <p className="contact-error-form-text">Email cannot be empty.</p>
+        )}
+        <label htmlFor="message" className="contact-form-text">
+          Message<div className="contact-error-form-text">*</div>
+        </label>
+        <textarea
+          className="form-input"
+          name="message"
+          value={message}
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
+        ></textarea>
+        {errors?.message && (
+          <p className="contact-error-form-text">
+            Message body cannot be empty.
+          </p>
+        )}
+        <div className="flex flex-row items-center justify-start">
+          <button type="submit" className="submit-button">
+            {buttonText}
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              className="airplane-icon"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              {buttonText}
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="airplane-icon"
+              <path
+                d="M9.00967 5.12761H11.0097C12.1142 5.12761 13.468 5.89682 14.0335 6.8457L16.5089 11H21.0097C21.562 11 22.0097 11.4477 22.0097 12C22.0097 12.5523 21.562 13 21.0097 13H16.4138L13.9383 17.1543C13.3729 18.1032 12.0191 18.8724 10.9145 18.8724H8.91454L12.4138 13H5.42485L3.99036 15.4529H1.99036L4.00967 12L4.00967 11.967L2.00967 8.54712H4.00967L5.44417 11H12.5089L9.00967 5.12761Z"
                 fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.00967 5.12761H11.0097C12.1142 5.12761 13.468 5.89682 14.0335 6.8457L16.5089 11H21.0097C21.562 11 22.0097 11.4477 22.0097 12C22.0097 12.5523 21.562 13 21.0097 13H16.4138L13.9383 17.1543C13.3729 18.1032 12.0191 18.8724 10.9145 18.8724H8.91454L12.4138 13H5.42485L3.99036 15.4529H1.99036L4.00967 12L4.00967 11.967L2.00967 8.54712H4.00967L5.44417 11H12.5089L9.00967 5.12761Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </button>
-          </div>
-          <div className="text-left">
-            {showSuccessMessage && (
-              <p className="success-message">
-                Thankyou! Your Message has been delivered.
-              </p>
-            )}
-            {showFailureMessage && (
-              <p className="error-message">
-                Oops! Something went wrong, please try again.
-              </p>
-            )}
-          </div>
-        </form>
-     
+              />
+            </svg>
+          </button>
+        </div>
+        <div className="text-left">
+          {showSuccessMessage && (
+            <p className="success-message">
+              Thank you! Your Message has been delivered.
+            </p>
+          )}
+          {showFailureMessage && (
+            <p className="error-message">
+              Oops! Something went wrong, please try again.
+            </p>
+          )}
+        </div>
+      </form>
+
       <section className="">
-        <h1
-          className={`reach-out ${
-            errors ? "md:mt-80" : "md:mt-60"
-          }`}
-        >
+        <h1 className={`reach-out ${errors ? "md:mt-80" : "md:mt-60"}`}>
           Reach out
         </h1>
         <div>
-          <div>
+          <div className="call-section">
             <svg
               width="24"
               height="24"
@@ -211,7 +198,7 @@ export default function ContactForm() {
                 fill="currentColor"
               />
             </svg>
-            <p>+34 697831082</p>
+            <p className="contact-form-text">+34 697831082</p>
           </div>
         </div>
       </section>
