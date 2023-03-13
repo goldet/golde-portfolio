@@ -3,6 +3,7 @@ import Avatar from "@mui/material/Avatar";
 import styles from "../styles/contact.module.css";
 import ContactForm from "./ContactForm";
 
+
 export default function ContactMe({ id }) {
 
 
@@ -12,28 +13,8 @@ export default function ContactMe({ id }) {
         <h1 className="contact-heading">Contact Me</h1>
         <div className="container-pic-text">
           <div className="form">
-            THIS IS WHERE THE FORM WILL GO
-            <ContactForm />
-            {/* <form onSubmit={handleSubmit(onSubmit)}>
-              <input
-                type="text"
-                name="name"
-                {...register('name', { required: true })}
-              />
-              
-              <input
-                type="email"
-                name="email"
-                {...register('email', { required: true })}
-              />
-              
-              <textarea
-                name="message"
-                {...register('message', { required: true })}
-              ></textarea>
-              
-              <button type="submit">Send</button>
-            </form> */}
+           <ContactForm />
+        
           </div>
 
           <div className="contact-text">
