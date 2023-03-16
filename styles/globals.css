@@ -170,7 +170,7 @@ span {
 }
 
 #full {
-  height: 100vh;
+  height: 150vh;
 }
 
 /* contact page */
@@ -250,8 +250,12 @@ span {
 
 /* end of footer */
 
+
 @media only screen and (min-width: 600px) {
   /* for tablets */
+  #full {
+    height: 220vh;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -259,6 +263,9 @@ span {
 
   body {
     margin: 38px;
+  }
+  #full {
+    height: 120vh;
   }
 
   .fullName {

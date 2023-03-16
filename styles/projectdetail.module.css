@@ -10,6 +10,7 @@
   align-items: center;
 }
 
+
 .project-links {
   background-color: none;
   color: white;
@@ -22,6 +23,10 @@
   color: white;
   text-decoration-thickness: 3px;
   
+}
+
+.mockup {
+  margin-right: 0px;
 }
 
 .collborator-github-links {
@@ -126,6 +131,10 @@
   .container-mockup-text {
     display: flex;
     flex-direction: row;
+  }
+
+  .mockup {
+    margin-right: 50px;
   }
 
   .container-project-and-heading {

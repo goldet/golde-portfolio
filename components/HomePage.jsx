@@ -64,7 +64,8 @@ export default function HomePage() {
             <div className="spacer-50"></div>
             <div className="spacer-50"></div>
           </div>
-
+          
+    
           <FreelanceCodeProject id="freelance-code"/>
           <div className="spacer"></div>
           <NewZeroWasteProject id="zero-waste"/>
@@ -80,6 +81,7 @@ export default function HomePage() {
          <Link href="#top"><section className="back-to-top">Back To Top</section></Link> 
          <FooterCredit />
         </div>
+       
 
        
       )}
