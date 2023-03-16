@@ -8,8 +8,9 @@ const GridProjects = ({ id }) => {
     <div  id={id} className="spacer-50"></div>
     <div className="cards-list">
       
+      <div className="gridlinks">
       <Link href="#freelance-code">
-        <a
+        <a 
           onClick={() => {
             document.querySelector("#freelance-code").scrollIntoView({
               behavior: "smooth",
@@ -28,9 +29,12 @@ const GridProjects = ({ id }) => {
           </div>
         </div>
       </Link>
+      </div>
 
+      <div className="gridlinks">
       <Link href="#zero-waste">
         <a
+        className="gridlinks"
           onClick={() => {
             document.querySelector("#zero-waste").scrollIntoView({
               behavior: "smooth",
@@ -52,9 +56,12 @@ const GridProjects = ({ id }) => {
           </div>
         </div>
       </Link>
+      </div>
 
+      <div className="gridlinks">
       <Link href="#ben-poetry">
         <a
+        className="gridlinks"
           onClick={() => {
             document.querySelector("#ben-poetry").scrollIntoView({
               behavior: "smooth",
@@ -73,7 +80,9 @@ const GridProjects = ({ id }) => {
           </div>
         </div>
       </Link>
+      </div>
 
+      <div className="gridlinks">
       <Link href="#second-life">
         <a
           onClick={() => {
@@ -94,6 +103,7 @@ const GridProjects = ({ id }) => {
           </div>
         </div>
       </Link>
+      </div>
     </div>
     </>
   );
