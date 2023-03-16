@@ -44,6 +44,7 @@ export default function ContactForm() {
 
     let isValidForm = handleValidation();
 
+    
     if (isValidForm) {
       setButtonText("Sending");
       const res = await fetch("http://localhost:3000/api/sendgrid", {
@@ -58,6 +59,7 @@ export default function ContactForm() {
         },
         method: "POST",
       });
+    
 
       const { error } = await res.json();
       if (error) {
