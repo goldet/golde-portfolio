@@ -15,6 +15,7 @@ body {
   /*  background-color: rgb(218, 183, 249); */
   background-color: #030200;
   margin: 0;
+  width: fit-content;
 }
 
 .main-home-screen {
