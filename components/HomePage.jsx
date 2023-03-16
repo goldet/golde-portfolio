@@ -40,16 +40,17 @@ export default function HomePage() {
   }, []);
 
   return (
-    <>
+    <> <div className="main-home-screen">
      {typingComplete && <Header id="top" />} 
      {!typingComplete && <div className="spacer-50"></div>}
       <h1 className="jobTitle">
         {text}
         <span aria-hidden="true"></span>
       </h1>
+      </div>
 
       {typingComplete && (
-        <div>
+        <div className="project-container">
           <div class="containerArrow">
             <a className="arrowScroll" data-scroll href="#full">
               <div class="arrow"></div>

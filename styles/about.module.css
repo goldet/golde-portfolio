@@ -13,7 +13,7 @@
 
 .about-pic,
 .about-text {
-  width: calc(90% - 90px);
+  width: calc(100% - 100px);
   display: flex;
   justify-content: center;
 }

@@ -14,7 +14,12 @@
 body {
   /*  background-color: rgb(218, 183, 249); */
   background-color: #030200;
+  margin: 0;
+}
+
+.main-home-screen {
   margin: 30px;
+  
 }
 
 .spacer {
@@ -35,6 +40,7 @@ body {
   font-size: 40px;
   border-color: rgb(218, 183, 249);
   border-width: 6px;
+  
 }
 
 .lastName {
@@ -274,6 +280,8 @@ span {
     gap: 5px;
     margin-bottom: 30px;
   }
+
+  
 
   /* homepage */
   .jobTitle {
