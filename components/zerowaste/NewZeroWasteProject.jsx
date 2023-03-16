@@ -1,8 +1,6 @@
-import Header from "../Header";
-import zwhero from "../../public/zwhero.png";
+
 import zerowastelaptop from "../../public/zerowastelaptop.png";
 import Image from "next/image";
-import { useState } from "react";
 import styles from "../../styles/projectdetail.module.css";
 
 
@@ -11,7 +9,6 @@ const NewZeroWasteProject = ({ id }) => {
   return (
     <>
     <div id={id} className="container-project-and-heading">
-      <h1 className="project-heading">Projects</h1>
       <div className="container-mockup-text">
         <div className="mockup">
           <Image
@@ -30,8 +27,8 @@ const NewZeroWasteProject = ({ id }) => {
           </p>
           <p>Made with</p>
           <p>Next.Js Tailwind Css Express.Js MySQL</p>
-          <div>
-            {/* <button>Live Site</button> */} <a className="project-links" href="https:github.com/goldet/zero-waste">github</a>
+          <div className="github-live-links-container">
+             <a target="blank" className="project-links" href="https:github.com/goldet/zero-waste">github</a> <div className="line-divider">|</div> {/* <button>Live Site</button> */}
           </div>
         </div>
       </div>

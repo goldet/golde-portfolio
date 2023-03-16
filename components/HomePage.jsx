@@ -8,6 +8,10 @@ import NewZeroWasteProject from "./zerowaste/NewZeroWasteProject";
 import BenPoetryProject from "./benpoetry/BenPoetryProject";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
+import FreeCycleFeatureExtension from "./freecycle/FreeCycleFeatureExtension";
+import FreelanceCodeProject from "./freelancecode/FreelanceCodeProject";
+import Link from "next/link";
+import FooterCredit from "./FooterCredit";
 
 export default function HomePage() {
   const dataText = ["F ull Stack Developer"];
@@ -37,7 +41,7 @@ export default function HomePage() {
 
   return (
     <>
-     {typingComplete && <Header />} 
+     {typingComplete && <Header id="top" />} 
      {!typingComplete && <div className="spacer-50"></div>}
       <h1 className="jobTitle">
         {text}
@@ -55,23 +59,29 @@ export default function HomePage() {
           <div className="spacer-50"></div>
           <div className="spacer-50"></div>
           <div id="full">
-            <GridProjects />
+            <GridProjects id="projects"/>
             <div className="spacer-50"></div>
             <div className="spacer-50"></div>
             <div className="spacer-50"></div>
           </div>
 
+          <FreelanceCodeProject id="freelance-code"/>
+          <div className="spacer"></div>
           <NewZeroWasteProject id="zero-waste"/>
-        
           <div className="spacer"></div>
           <BenPoetryProject id="ben-poetry"/>
+          <div className="spacer"></div>
+          <FreeCycleFeatureExtension id="second-life"/>
           <div className="spacer"></div>
           <AboutMe id="about"/>
 
           <ContactMe id="contact"/>
 
-          <Footer />
+         <Link href="#top"><section className="back-to-top">Back To Top</section></Link> 
+         <FooterCredit />
         </div>
+
+       
       )}
     </>
   );

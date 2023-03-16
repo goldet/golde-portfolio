@@ -3,13 +3,15 @@ import Footer from "@/components/Footer";
 import Avatar from "@mui/material/Avatar";
 import Image from "next/image";
 import LinkedinPhoto from "../public/LinkedinPhoto.jpg";
+import responsivedesign from "../public/responsivedesign.png";
 import styles from "../styles/about.module.css";
 
 export default function AboutMe({ id }) {
   
   return (
     <>
-      <section id={id} className="about-me-section"> 
+    <div id={id} className="spacer-50"></div>
+      <section className="about-me-section"> 
             <h1 className="about-name">About Me</h1>
           <div className="container-pic-text"> 
 
@@ -232,6 +234,11 @@ export default function AboutMe({ id }) {
               class="devicons devicons devicons-responsive"
               title="responsive"
             ></div>
+            <Image   className="svg"
+                src={responsivedesign}
+                height={"auto"}
+                width={"100%"}
+                alt="icon to represent responsive design"/>
             <p className="skill-name">Responsive Design</p>
           </li>
 

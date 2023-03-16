@@ -24,7 +24,27 @@
   
 }
 
+.collborator-github-links {
+  color: white;
+}
 
+.collborator-github-links:hover {
+  text-decoration: underline;
+  text-decoration-color: #369cee;
+  color: white;
+  text-decoration-thickness: 2px;
+}
+
+.github-live-links-container {
+  display: flex;
+  gap: 10px;
+}
+
+.line-divider {
+  font-size: 18px;
+  font-weight: 800;
+  color: #369cee;
+}
 
 .project-heading {
   color: white;
@@ -40,7 +60,7 @@
 .project-text {
   flex-direction: column;
   font-family: "Mulish", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: "Sen", sans-serif;
   background-color: #030200;
   color: #f8f8f8;
@@ -91,7 +111,7 @@
   .project-text {
     flex-direction: column;
     font-family: "Mulish", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: "Sen", sans-serif;
     background-color: #030200;
     color: #f8f8f8;
@@ -130,7 +150,7 @@
   .project-text {
     flex-direction: column;
     font-family: "Mulish", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: "Sen", sans-serif;
     background-color: #030200;
     color: #f8f8f8;

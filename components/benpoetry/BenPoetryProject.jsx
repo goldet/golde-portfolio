@@ -26,13 +26,13 @@ const BenPoetryProject = ({ id }) => {
           <div className="project-text">
             <h1>Ben Shroeder Poetry</h1>
             <p>
-              A freelance project made with @Dan Nisenson, to showcase the work
+              A freelance project made with <a className="collborator-github-links" target="blank"  href="https://github.com/DanNisenson">Dan Nisenson </a>, to showcase the work
               of poet and essayist Ben Shroeder.
             </p>
             <p>Made with</p>
             <p>Next.Js Tailwind Css</p>
-            <div>
-             {/*  <button>Live Site</button> */} <a className="project-links" href="https:github.com/goldet/benspoetryapp">github </a>
+            <div className="github-live-links-container">
+            <a className="project-links" target="blank"  href="https:github.com/goldet/benspoetryapp">github </a> <div className="line-divider">|</div> <a className="project-links" target="blank" href="https://benspoetryapp.vercel.app/">live site</a> 
             </div>
           </div>
         </div>
