@@ -6,7 +6,7 @@ const FreelanceCodeProject = ({ id }) => {
   return (
     <>
       <div id={id} className="container-project-and-heading">
-        <h1 className="project-heading">Projects</h1>
+        <h1 className="project-heading project-heading-margin">Projects</h1>
         <div className="container-mockup-text">
           <div className="mockup">
             <Image

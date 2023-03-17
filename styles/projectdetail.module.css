@@ -60,8 +60,11 @@
   text-decoration-color: #369cee;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 20vh;
 
 }
+
+
 
 .project-text {
   flex-direction: column;
@@ -96,6 +99,7 @@
     text-decoration-color: #369cee;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top:10vh
   }
 
   .mockup {
@@ -113,6 +117,7 @@
     margin-top: 0vh;
     
   }
+
 
   .project-text {
     flex-direction: column;
@@ -151,6 +156,7 @@
     text-decoration-color: #369cee;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top:0vh;
   }
 
   .mockup {
