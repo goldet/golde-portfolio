@@ -65,8 +65,6 @@ export default function ContactForm() {
           setShowSuccessMessage(false);
           setShowFailureMessage(true);
           setButtonText("Send");
-  
-        
           setFullname("");
           setEmail("");
           setMessage("");
@@ -76,25 +74,27 @@ export default function ContactForm() {
         setShowSuccessMessage(true);
         setShowFailureMessage(false);
         setButtonText("Send");
-        
         setFullname("");
         setEmail("");
         setMessage("");
         setSubject("");
+        function sleep(ms) {
+          return new Promise((resolve) => setTimeout(resolve, ms));
+        }
+
+        await sleep(2000);
+        setShowSuccessMessage(false);
       } catch (error) {
         console.error(error);
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
-        setButtonText("Send");
-  
-     
+        setButtonText("Send"); 
         setFullname("");
         setEmail("");
         setMessage("");
         setSubject("");
       }
     }
-    console.log(fullname, email, subject, message);
   };
   
   return (
