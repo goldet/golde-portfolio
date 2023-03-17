@@ -93,6 +93,12 @@ export default function ContactForm() {
         setEmail("");
         setMessage("");
         setSubject("");
+        function sleep(ms) {
+          return new Promise((resolve) => setTimeout(resolve, ms));
+        }
+
+        await sleep(2000);
+        setShowFailureMessage(false);
       }
     }
   };
@@ -103,8 +109,7 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
       >
-{/*         <h1 className="contact-form-heading">Send a message</h1>
- */}
+
         <label htmlFor="fullname" className="contact-form-text">
           Full Name<div className="contact-error-form-text">*</div>
         </label>
@@ -221,61 +226,3 @@ export default function ContactForm() {
 
 
 
-
-/* const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  let isValidForm = handleValidation();
-
-  if (isValidForm) {
-    setButtonText("Sending");
-    try {
-      const res = await fetch("http://localhost:3000/api/sendgrid", {
-        body: JSON.stringify({
-          email: email,
-          fullname: fullname,
-          subject: subject,
-          message: message,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      });
-
-      const { error } = await res.json();
-      if (error) {
-        setShowSuccessMessage(false);
-        setShowFailureMessage(true);
-        setButtonText("Send");
-
-
-        setFullname("");
-        setEmail("");
-        setMessage("");
-        setSubject("");
-        return;
-      }
-      setShowSuccessMessage(true);
-      setShowFailureMessage(false);
-      setButtonText("Send");
-
-      setFullname("");
-      setEmail("");
-      setMessage("");
-      setSubject("");
-    } catch (error) {
-      console.error(error);
-      setShowSuccessMessage(false);
-      setShowFailureMessage(true);
-      setButtonText("Send");
-
-  
-      setFullname("");
-      setEmail("");
-      setMessage("");
-      setSubject("");
-    }
-  }
-  console.log(fullname, email, subject, message);
-}; */
