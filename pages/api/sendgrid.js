@@ -1,4 +1,5 @@
 import sendgrid from "@sendgrid/mail";
+import ContactForm from "@/components/ContactForm";
 
 /* sendgrid.setApiKey(process.env.SENDGRID_API_KEY) */;
 

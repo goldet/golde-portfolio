@@ -41,51 +41,62 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     let isValidForm = handleValidation();
-
-    
+  
     if (isValidForm) {
       setButtonText("Sending");
-      const res = await fetch("http://localhost:3000/api/sendgrid", {
-        body: JSON.stringify({
-          email: email,
-          fullname: fullname,
-          subject: subject,
-          message: message,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      });
-    
-
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        setShowSuccessMessage(false);
-        setShowFailureMessage(true);
+      try {
+        const res = await fetch("http://localhost:3000/api/sendgrid", {
+          body: JSON.stringify({
+            email: email,
+            fullname: fullname,
+            subject: subject,
+            message: message,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+          method: "POST",
+        });
+  
+        const { error } = await res.json();
+        if (error) {
+          setShowSuccessMessage(false);
+          setShowFailureMessage(true);
+          setButtonText("Send");
+  
+          // Reset form fields
+          setFullname("");
+          setEmail("");
+          setMessage("");
+          setSubject("");
+          return;
+        }
+        setShowSuccessMessage(true);
+        setShowFailureMessage(false);
         setButtonText("Send");
-
         // Reset form fields
         setFullname("");
         setEmail("");
         setMessage("");
         setSubject("");
-        return;
+      } catch (error) {
+        console.error(error);
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        setButtonText("Send");
+  
+        // Reset form fields
+        setFullname("");
+        setEmail("");
+        setMessage("");
+        setSubject("");
       }
-      setShowSuccessMessage(true);
-      setShowFailureMessage(false);
-      setButtonText("Send");
-      // Reset form fields
-      setFullname("");
-      setEmail("");
-      setMessage("");
-      setSubject("");
     }
     console.log(fullname, email, subject, message);
   };
+  
   return (
     <main className="form-container">
       <form
@@ -207,3 +218,63 @@ export default function ContactForm() {
     </main>
   );
 }
+
+
+/* const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  let isValidForm = handleValidation();
+
+  if (isValidForm) {
+    setButtonText("Sending");
+    try {
+      const res = await fetch("http://localhost:3000/api/sendgrid", {
+        body: JSON.stringify({
+          email: email,
+          fullname: fullname,
+          subject: subject,
+          message: message,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
+
+      const { error } = await res.json();
+      if (error) {
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        setButtonText("Send");
+
+      
+        setFullname("");
+        setEmail("");
+        setMessage("");
+        setSubject("");
+        return;
+      }
+      setShowSuccessMessage(true);
+      setShowFailureMessage(false);
+      setButtonText("Send");
+      
+      setFullname("");
+      setEmail("");
+      setMessage("");
+      setSubject("");
+    } catch (error) {
+      console.error(error);
+      setShowSuccessMessage(false);
+      setShowFailureMessage(true);
+      setButtonText("Send");
+
+   
+      setFullname("");
+      setEmail("");
+      setMessage("");
+      setSubject("");
+    }
+  }
+  console.log(fullname, email, subject, message);
+};
+ */
