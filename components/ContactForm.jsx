@@ -37,7 +37,7 @@ export default function ContactForm() {
     return isValid;
   };
 
-  //   const [form, setForm] = useState(false);
+     const [form, setForm] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,7 +47,7 @@ export default function ContactForm() {
     if (isValidForm) {
       setButtonText("Sending");
       try {
-        const res = await fetch("http://localhost:3000/api/sendgrid", {
+        const res = await fetch("/api/sendgrid", {
           body: JSON.stringify({
             email: email,
             fullname: fullname,
@@ -66,7 +66,7 @@ export default function ContactForm() {
           setShowFailureMessage(true);
           setButtonText("Send");
   
-          // Reset form fields
+        
           setFullname("");
           setEmail("");
           setMessage("");
@@ -76,7 +76,7 @@ export default function ContactForm() {
         setShowSuccessMessage(true);
         setShowFailureMessage(false);
         setButtonText("Send");
-        // Reset form fields
+        
         setFullname("");
         setEmail("");
         setMessage("");
@@ -87,7 +87,7 @@ export default function ContactForm() {
         setShowFailureMessage(true);
         setButtonText("Send");
   
-        // Reset form fields
+     
         setFullname("");
         setEmail("");
         setMessage("");
@@ -220,6 +220,8 @@ export default function ContactForm() {
 }
 
 
+
+
 /* const handleSubmit = async (e) => {
   e.preventDefault();
 
@@ -247,7 +249,7 @@ export default function ContactForm() {
         setShowFailureMessage(true);
         setButtonText("Send");
 
-      
+
         setFullname("");
         setEmail("");
         setMessage("");
@@ -257,7 +259,7 @@ export default function ContactForm() {
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
       setButtonText("Send");
-      
+
       setFullname("");
       setEmail("");
       setMessage("");
@@ -268,7 +270,7 @@ export default function ContactForm() {
       setShowFailureMessage(true);
       setButtonText("Send");
 
-   
+  
       setFullname("");
       setEmail("");
       setMessage("");
@@ -276,5 +278,4 @@ export default function ContactForm() {
     }
   }
   console.log(fullname, email, subject, message);
-};
- */
+}; */
