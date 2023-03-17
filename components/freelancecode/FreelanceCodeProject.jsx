@@ -25,13 +25,13 @@ const FreelanceCodeProject = ({ id }) => {
                 target="blank"
                 href="https://github.com/kpo18"
               >
-                Shauni Vanderhorst{" "}
+                Shauni van der Horst{" "}
               </a> and  <a
                 className="collborator-github-links"
                 target="blank"
                 href="https://github.com/Shaunivdh"
               >
-                Katja Pollman{" "}
+                Katja Pollmann{" "}
               </a>, created this
               web app to find freelance services from the graduates of CodeOp.
             </p>
