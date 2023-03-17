@@ -25,7 +25,7 @@ const FreeCycleFeatureExtension = ({ id }) => {
                 target="blank"
                 href="https://github.com/kpo18"
               >
-                Katja Pollman.{" "}
+                Katja Pollmann.{" "}
               </a>
               Her web app seeks to create a space where you can get free
               things around London. I added the feature extension of being able
