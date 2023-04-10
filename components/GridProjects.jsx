@@ -104,9 +104,34 @@ const GridProjects = ({ id }) => {
         </div>
       </Link>
       </div>
+
+      <div className="gridlinks">
+      <Link href="#paypulp">
+        <a
+          onClick={() => {
+            document.querySelector("#second-life").scrollIntoView({
+              behavior: "smooth",
+              duration: 3000,
+            });
+          }}
+        >
+          {" "}
+        </a>
+        <div className="card 5">
+          <div className="card_image">
+            <img src="https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif" />
+          </div>
+          <div className="card_title title-black">
+            <p className="card-text">Feature Extension: PayPulp</p>
+          </div>
+        </div>
+      </Link>
+      </div>
     </div>
     </>
   );
 };
+
+
 
 export default GridProjects;
