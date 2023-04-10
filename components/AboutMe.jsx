@@ -1,6 +1,3 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Avatar from "@mui/material/Avatar";
 import Image from "next/image";
 import LinkedinPhoto from "../public/LinkedinPhoto.jpg";
 import responsivedesign from "../public/responsivedesign.png";
@@ -41,11 +38,6 @@ export default function AboutMe({ id }) {
                 I thrive in dynamic environments where I can use my adaptability
                 and love for learning to create clear and effective solutions.
               </p>
-
-             {/*  <p>
-                When I&#39;m not coding I&#39;m watching PBS SpaceTime or
-                Crekenford on Youtube, reading, or painting.
-              </p> */}
             </div>
           </div>
         

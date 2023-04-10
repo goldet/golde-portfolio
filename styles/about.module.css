@@ -1,4 +1,3 @@
-
 .about-me-section {
   margin-top: 60vh;
   display: flex;
@@ -29,7 +28,6 @@
   letter-spacing: 1.5px;
 }
 
-
 .about-name {
   color: white;
   font-size: 38px;
@@ -49,7 +47,7 @@
 }
 
 .skill-name:hover {
-    color: rgb(218, 183, 249);
+  color: rgb(218, 183, 249);
 }
 
 .skills-heading {
@@ -61,8 +59,6 @@
   text-decoration: underline;
   text-decoration-color: rgb(218, 183, 249);
 }
-
-
 
 .image {
   width: 100%;
@@ -76,18 +72,15 @@
   flex-direction: column;
 }
 
-
-
 .skills-title {
   display: flex;
   text-align: center;
 }
 
-
-
 .image {
   width: 300px;
   height: 300px;
+  padding-bottom: 20px;
 }
 
 .spacer {
@@ -149,14 +142,15 @@
 }
 
 @media only screen and (min-width: 600px) {
-  /* test */
+  .image {
+    padding-bottom: 0;
+  }
   .about-me-section {
     margin-top: 0vh;
   }
 
   .container-pic-text {
     display: flex;
-
   }
 
   .about-pic {
@@ -170,7 +164,6 @@
     justify-content: center;
   }
 
-  /* for tablets */
   .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -178,8 +171,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  /* test */
-
   .about-me-section {
     margin-top: 0vh;
   }
@@ -210,5 +201,4 @@
     width: 400px;
     height: 100%;
   }
-
 }

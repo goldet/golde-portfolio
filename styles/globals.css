@@ -14,13 +14,11 @@
 body {
   /*  background-color: rgb(218, 183, 249); */
   background-color: #030200;
-  margin: 0;
   width: fit-content;
 }
 
 .main-home-screen {
   margin: 30px;
-  
 }
 
 .spacer {
@@ -41,7 +39,6 @@ body {
   font-size: 40px;
   border-color: rgb(218, 183, 249);
   border-width: 6px;
-  
 }
 
 .lastName {
@@ -218,9 +215,6 @@ span {
 
 /* about me page */
 
-
-
-
 /* end of about me page */
 
 .spacer-750 {
@@ -257,7 +251,6 @@ span {
 
 /* end of footer */
 
-
 @media only screen and (min-width: 600px) {
   /* for tablets */
   #full {
@@ -281,8 +274,6 @@ span {
     gap: 5px;
     margin-bottom: 30px;
   }
-
-  
 
   /* homepage */
   .jobTitle {
@@ -384,10 +375,10 @@ span {
   }
 
   /* end of contact */
-
-  
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .animate { animation: none !important; }
+  .animate {
+    animation: none !important;
+  }
 }

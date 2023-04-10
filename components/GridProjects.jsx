@@ -22,10 +22,10 @@ const GridProjects = ({ id }) => {
         </a>
         <div className="card 4">
           <div className="card_image">
-            <img src="https://media.giphy.com/media/KzeZ3OXHoSDVZH9cmy/giphy.gif" />
+            <img src="https://media.giphy.com/media/DxEmstaPbPGJTYSjLM/giphy.gif"/>
           </div>
           <div className="card_title title-black">
-            <p className="card-text">Coming Soon: Freelance Code</p>
+            <p className="card-text">Freelance Code</p>
           </div>
         </div>
       </Link>

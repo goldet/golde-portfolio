@@ -4,14 +4,15 @@ import Footer from "@/components/Footer";
 import { useState, useEffect } from "react";
 import GridProjects from "./GridProjects";
 import styles from "../styles/homepage.module.css";
-import NewZeroWasteProject from "./zerowaste/NewZeroWasteProject";
-import BenPoetryProject from "./benpoetry/BenPoetryProject";
+import NewZeroWasteProject from "./projects/NewZeroWasteProject";
+import BenPoetryProject from "./projects/BenPoetryProject";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
-import FreeCycleFeatureExtension from "./freecycle/FreeCycleFeatureExtension";
-import FreelanceCodeProject from "./freelancecode/FreelanceCodeProject";
+import FreeCycleFeatureExtension from "./projects/FreeCycleFeatureExtension";
+import FreelanceCodeProject from "./projects/FreelanceCodeProject";
 import Link from "next/link";
 import FooterCredit from "./FooterCredit";
+import PaypulpProject from "./projects/PaypulpProject";
 
 export default function HomePage() {
   const dataText = ["F ull Stack Developer"];
@@ -74,6 +75,8 @@ export default function HomePage() {
           <BenPoetryProject id="ben-poetry"/>
           <div className="spacer"></div>
           <FreeCycleFeatureExtension id="second-life"/>
+          <div className="spacer"></div>
+          <PaypulpProject id="paypulp"/>
           <div className="spacer"></div>
           <AboutMe id="about"/>
 
