@@ -17,7 +17,7 @@ const NewZeroWasteProject = ({ id }) => {
               "Use this web application to reduce food waste and get in touch with your community. Post food you want to give away or food you need. Search products by type or by location."
             }
             techStack={"Next.Js Tailwind Css Express.Js MySQL"}
-            link={"https:github.com/goldet/zero-waste"}
+            link={"https://github.com/goldet/zero-waste"}
             linkName={"github"}
           />
         </div>
