@@ -1,4 +1,8 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
+import { useEffect } from "react";
+
 const ProjectTemplate = ({
   imageName,
   projectName,
@@ -12,10 +16,21 @@ const ProjectTemplate = ({
   linkName2,
   mobile,
 }) => {
+  useEffect(() => {
+    if (typeof AOS !== "undefined")
+    AOS.init();
+  }, []);
   return (
     <>
       {" "}
-      <div className={`mockup ${mobile ? 'mobile' : ''}`}>
+      <div
+        className={`mockup ${mobile ? "mobile" : ""}`}
+        data-aos="zoom-in-left"
+        data-aos-easing="ease-in"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-delay="50"
+      >
         <Image
           src={imageName}
           alt={`Image of ${projectName}`}
@@ -23,7 +38,14 @@ const ProjectTemplate = ({
           height={height}
         />
       </div>
-      <div className="project-text">
+      <div
+        className="project-text"
+        data-aos="zoom-in-right"
+        data-aos-easing="ease-in"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-delay="50"
+      >
         <h1>{projectName}</h1>
         <p>{description}</p>
         <p>Made with:</p>

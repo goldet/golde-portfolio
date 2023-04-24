@@ -34,7 +34,7 @@
   display: flex;
   justify-content: center;
   text-decoration: underline;
-  text-decoration-color: #76c442;
+  text-decoration-color: #369cee;
   align-items: center;
   font-weight: bold;
   flex-direction: column;
@@ -178,6 +178,7 @@
   .container-pic-text {
     display: flex;
     flex-direction: row;
+    margin: 60px;
   }
 
   .about-pic {

@@ -44,21 +44,22 @@ export default function HomePage() {
     <> <div className="main-home-screen">
      {typingComplete && <Header id="top" />} 
      {!typingComplete && <div className="spacer-50"></div>}
+
+     <div className="typing-container">
       <h1 className="jobTitle">
         {text}
         <span aria-hidden="true"></span>
       </h1>
       </div>
+      </div>
 
       {typingComplete && (
         <div className="project-container">
-          <div class="containerArrow">
+          <div className="containerArrow">
             <a className="arrowScroll" data-scroll href="#full">
-              <div class="arrow"></div>
+              <div className="arrow"></div>
             </a>
           </div>
-          <div className="spacer-50"></div>
-          <div className="spacer-50"></div>
           <div className="spacer-50"></div>
           <div id="full">
             <GridProjects id="projects"/>

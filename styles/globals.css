@@ -6,19 +6,31 @@
 @import url("about.module.css");
 @import url("contact.module.css");
 
+.text_box{
+  width: 0;
+  overflow: hidden;
+  font-size: 4rem;
+  white-space: nowrap;
+  animation: typing 2s steps(4) infinite;
+}
+
+@keyframes typing {
+  0% { width: 0 }
+}
+
 * {
   font-family: "Mulish", sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  /*  background-color: rgb(218, 183, 249); */
   background-color: #030200;
   width: fit-content;
 }
 
+
 .main-home-screen {
-  margin: 30px;
+  margin: 20px 50px 0px 50px;
 }
 
 .spacer {
@@ -27,10 +39,9 @@ body {
 
 /* header */
 
-.firstName {
+/* .firstName {
   color: black;
   text-decoration: none;
-  /* background-color: rgb(161, 178, 248); */
   background-color: rgb(218, 183, 249);
   padding-left: 5px;
   padding-right: 5px;
@@ -39,13 +50,14 @@ body {
   font-size: 40px;
   border-color: rgb(218, 183, 249);
   border-width: 6px;
-}
+} */
 
-.lastName {
+.firstName {
   background: none;
   font-weight: 500;
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: rgb(218, 183, 249);;
   letter-spacing: 2px;
   text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
     0 -1px 1px #000, 1px 1px 0 #000;
@@ -57,6 +69,33 @@ body {
   display: flex;
   flex-direction: row;
   gap: 5px;
+}
+
+.btn {
+  color: #fff;
+  background-color: black;
+  border: none;
+  font-size:35px;
+  font-weight: 600;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn1 {
+  text-decoration: underline;
+  text-decoration-color: rgb(218, 183, 249);
+}
+
+.btn2 {
+  text-decoration: underline;
+  text-decoration-color: #369cee;
+}
+
+.btn3 {
+  text-decoration: underline;
+  text-decoration-color: #76c442;
 }
 
 .animate {
@@ -132,11 +171,9 @@ body {
   font-size: 50px;
   padding-top: 5px;
   margin-top: 80px;
-  margin-left: 10px;
   letter-spacing: -1px;
   font-family: "Press Start 2P";
   display: block;
-
   word-spacing: -20px;
 }
 
@@ -172,10 +209,10 @@ span {
   align-items: center;
   justify-content: center;
 }
-
+/* 
 #full {
   height: 150vh;
-}
+} */
 
 /* contact page */
 
@@ -213,9 +250,7 @@ span {
 
 /* end of contact page */
 
-/* about me page */
 
-/* end of about me page */
 
 .spacer-750 {
   height: 750px;
@@ -252,21 +287,16 @@ span {
 /* end of footer */
 
 @media only screen and (min-width: 600px) {
-  /* for tablets */
-  #full {
-    height: 220vh;
-  }
+
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
 
   body {
-    margin: 38px;
+    width: fit-content;
   }
-  #full {
-    height: 120vh;
-  }
+
 
   .fullName {
     display: flex;
@@ -289,8 +319,13 @@ span {
     letter-spacing: -5px;
     word-spacing: -35px;
     display: block;
-    font-size: 9.4em;
+    font-size: 9.4rem;
     margin-top: 40px;
+    width: 100%;
+  }
+
+  .typing-container {
+    width: 100%;
   }
 
   span {
@@ -326,9 +361,8 @@ span {
     justify-content: center;
   }
 
-  #full {
-    height: 100vh;
-  }
+
+
 
   .header {
     display: flex;
