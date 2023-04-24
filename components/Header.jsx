@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
 import useScrambleText from "@/hooks/useScrambleText";
 import HamburgerMenu from "./HamburgerMenu";
+import DesktopMenu from "./DesktopMenu";
 
 
 const Header = () => {
@@ -14,34 +15,7 @@ const Header = () => {
          <h1 className="text_box firstName" ref={textBoxRef}>Golde Tischler</h1>
         </div>
       <HamburgerMenu />
-        <div className="animate glow delay-1 desktop-menu">
-          <Link href="#projects">
-            <button type="button" className="btn btn1 scrambled-text">
-              Work
-            </button>
-          </Link>
-
-          <Link href="#about">
-            <button
-              type="button"
-              className="btn btn2"
-              onClick={() => {
-                document.querySelector("#zero-waste").scrollIntoView({
-                  behavior: "smooth",
-                  duration: 2000,
-                });
-              }}
-            >
-              About
-            </button>
-          </Link>
-
-          <Link href="#contact">
-            <button type="button" className="btn btn3">
-              Contact
-            </button>
-          </Link>
-        </div>
+      <DesktopMenu />
       </div>
     </>
   );
