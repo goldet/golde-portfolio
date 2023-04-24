@@ -1,5 +1,5 @@
 .container-project-and-heading {
-  margin-top: 60vh;
+/*   margin-top: 60vh; */
   display: flex;
   flex-direction: column;
 }

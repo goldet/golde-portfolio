@@ -3,7 +3,7 @@
 
 }
 .container-project-and-heading {
-  margin-top: 60vh;
+  /* margin-top: 60vh; */
   display: flex;
   flex-direction: column;
 }
@@ -63,7 +63,7 @@
   text-decoration-color: rgb(218, 183, 249);
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 60vh;
+  /* margin-top: 60vh; */
 
 }
 
@@ -103,7 +103,7 @@
     text-decoration-color: rgb(218, 183, 249);
     font-weight: bold;
     text-transform: uppercase;
-    margin-top:10vh
+    /* margin-top:10vh */
   }
 
   .mockup {

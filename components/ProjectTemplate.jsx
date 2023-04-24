@@ -27,9 +27,9 @@ const ProjectTemplate = ({
         className={`mockup ${mobile ? "mobile" : ""}`}
         data-aos="zoom-in-left"
         data-aos-easing="ease-in"
-        data-aos-duration="1000"
-        data-aos-offset="200"
-        data-aos-delay="50"
+        data-aos-duration="800"
+        data-aos-offset="100"
+        data-aos-delay="25"
       >
         <Image
           src={imageName}
@@ -42,9 +42,9 @@ const ProjectTemplate = ({
         className="project-text"
         data-aos="zoom-in-right"
         data-aos-easing="ease-in"
-        data-aos-duration="1000"
-        data-aos-offset="200"
-        data-aos-delay="50"
+        data-aos-duration="800"
+        data-aos-offset="100"
+        data-aos-delay="25"
       >
         <h1>{projectName}</h1>
         <p>{description}</p>
