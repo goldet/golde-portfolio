@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:  #0e1111;;
+    background-color:  #0e1111;
     z-index: 1;
     overflow: hidden;
   }
@@ -32,8 +32,8 @@
     transition: color 0.2s ease-in-out;
   }
 
-  .closed ul li a {
-   display: none;
+  .closed ul {
+    display: none;
   }
   
   .hamburger {
@@ -47,6 +47,10 @@
     border: none;
     cursor: pointer;
     z-index: 2;
+  }
+
+  .hamburger:focus {
+    outline: none;
   }
   
   .hamburger-line {
