@@ -5,18 +5,10 @@
 @import url("projectgrid.module.css");
 @import url("about.module.css");
 @import url("contact.module.css");
+@import url("hamburgermenu.module.css");
 
-.text_box{
-  width: 0;
-  overflow: hidden;
-  font-size: 4rem;
-  white-space: nowrap;
-  animation: typing 2s steps(4) infinite;
-}
 
-@keyframes typing {
-  0% { width: 0 }
-}
+
 
 * {
   font-family: "Mulish", sans-serif;
@@ -24,7 +16,7 @@
 }
 
 body {
-  background-color: #030200;
+  background-color: #0e1111;
   width: fit-content;
 }
 
@@ -38,6 +30,22 @@ body {
 }
 
 /* header */
+
+.desktop-menu {
+  display: none;
+}
+
+.text_box{
+  width: 0;
+  overflow: hidden;
+  font-size: 4rem;
+  white-space: nowrap;
+  animation: typing 2s steps(4) infinite;
+}
+
+@keyframes typing {
+  0% { width: 0 }
+}
 
 .firstName {
   background: none;
@@ -60,7 +68,7 @@ body {
 
 .btn {
   color: #fff;
-  background-color: black;
+  background-color:  #0e1111;;
   border: none;
   font-size:35px;
   font-weight: 600;
@@ -274,7 +282,14 @@ span {
 /* end of footer */
 
 @media only screen and (min-width: 600px) {
+  .desktop-menu {
+    display: flex;
+  }
 
+  .mobile-menu {
+    display: none;
+  }
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -364,18 +379,6 @@ span {
     top: 42%;
   }
 
-  .contactTitle {
-    background: none;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000,
-      0 -1px 1px #000, 1px 1px 0 #000;
-    font-weight: 800;
-    font-size: 42px;
-    margin-top: 30px;
-    margin-left: 10px;
-  }
 
   .introBubbleContact {
     margin-top: 0px;

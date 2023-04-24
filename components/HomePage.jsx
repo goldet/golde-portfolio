@@ -13,6 +13,7 @@ import FreelanceCodeProject from "./projects/FreelanceCodeProject";
 import Link from "next/link";
 import FooterCredit from "./FooterCredit";
 import PaypulpProject from "./projects/PaypulpProject";
+import HamburgerMenu from "./HamburgerMenu";
 
 export default function HomePage() {
   const dataText = ["F ull Stack Developer"];

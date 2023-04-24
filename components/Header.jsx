@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
 import useScrambleText from "@/hooks/useScrambleText";
+import HamburgerMenu from "./HamburgerMenu";
+
 
 const Header = () => {
   const { textBoxRef } = useScrambleText("Golde Tischler");
@@ -11,8 +13,8 @@ const Header = () => {
         <div className="fullName animate glow delay-1">
          <h1 className="text_box firstName" ref={textBoxRef}>Golde Tischler</h1>
         </div>
-
-        <div className="animate glow delay-1">
+      <HamburgerMenu />
+        <div className="animate glow delay-1 desktop-menu">
           <Link href="#projects">
             <button type="button" className="btn btn1 scrambled-text">
               Work
