@@ -9,7 +9,6 @@ const HamburgerMenu = () => {
     setIsOpen(!isOpen);
   };
 
-
   return (
     <>
       {/* Mobile menu */}
@@ -19,7 +18,7 @@ const HamburgerMenu = () => {
           <span className="hamburger-line" />
           <span className="hamburger-line" />
         </button>
-        <ul >
+        <ul>
           <li>
             <Link href="#projects" onClick={toggleMenu}>
               Work
