@@ -32,14 +32,14 @@ const FreelanceCodeProject = ({ id }) => {
                   rel="noopener noreferrer"
                   href="https://github.com/Shaunivdh"
                 >
-                  Shauni van der Horst
+                  {" "}Shauni van der Horst
                 </a>
                 , created this web app to find freelance services from the
                 graduates of CodeOp.
               </>
             }
             techStack={"Next.Js Tailwind css MySQL"}
-            link={"https://github.com/CodeOp-tech/fspt13-team-3"}
+            link={"https://github.com/goldet/freelance-code"}
             linkName={"github"}
           />
         </div>
