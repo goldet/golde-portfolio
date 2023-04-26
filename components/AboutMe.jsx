@@ -91,10 +91,10 @@ export default function AboutMe({ id }) {
             {" "}
             <div
               aria-hidden="true"
-              className="devicons devicons devicons-TypeScript"
-              title="TYPESCRIPT"
+              className="devicons devicons devicons-REACT"
+              title="TypeScript"
             ></div>
-            <svg viewBox="0 0 128 128">
+            <svg className="svg" viewBox="0 0 128 128">
               <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path>
               <path
                 data-name="original"
