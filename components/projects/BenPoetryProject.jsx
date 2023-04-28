@@ -30,7 +30,7 @@ const BenPoetryProject = ({ id }) => {
           techStack={"Next.Js Tailwind Css"}
           link={"https://github.com/goldet/benspoetryapp"}
           linkName={"github"}
-          link2={"https://benspoetryapp.vercel.app/"}
+          link2={"https://www.benspoems.com/"}
           linkName2={"live site"}
         />
       </div>
